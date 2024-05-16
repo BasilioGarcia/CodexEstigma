@@ -1,0 +1,12 @@
+#table-medir-ventajas-desventajas tr td:nth-of-type(2){
+    text-align: center;
+}
+
+#table-medir-ventajas-desventajas tbody tr td:nth-of-type(3),
+#table-medir-ventajas-desventajas tbody tr td:nth-of-type(4) {
+    font-size: 0.9em !important;
+}
+
+#table-ventajas-desventajas tbody tr td:first-of-type, #table-ventajas-desventajas tbody tr td:last-of-type{
+    text-align: center;
+}

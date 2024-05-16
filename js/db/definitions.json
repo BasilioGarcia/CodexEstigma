@@ -1,0 +1,18 @@
+{
+  "celda": {
+    "title": "título entrada celda",
+    "clave": "valor celda"
+  },
+  "desventaja": {
+    "title": "título entrada desventaja",
+    "clave": "valor desventaja"
+  },
+  "reaccion": {
+    "title": "título entrada reacción",
+    "clave": "valor reacción"
+  },
+  "tiro-base": {
+    "title": "título entrada tiro base",
+    "clave": "valor tiro base"
+  }
+}

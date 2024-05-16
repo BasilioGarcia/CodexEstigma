@@ -1,0 +1,58 @@
+{
+  "0": {
+    "title": "Codex Estigma"
+  },
+  "1": {
+    "title": "Sobre Codex Estigma",
+    "url": "/pages/acerca-de"
+  },
+  "2": {
+    "title": "Tiro base",
+    "url": "/pages/tiro-base"
+  },
+  "3": {
+    "title": "Salud y cordura",
+    "url": "/pages/salud-y-cordura"
+  },
+  "4": {
+    "title": "Atributos",
+    "url": "/pages/atributos"
+  },
+  "5": {
+    "title": "Turnos y acciones",
+    "url": "/pages/turnos-y-acciones"
+  },
+  "6": {
+    "title": "Habilidades",
+    "url": "/pages/habilidades"
+  },
+  "7": {
+    "title": "Maniobras",
+    "sections": {
+      "1": {
+        "title": "Adquirir maniobras",
+        "url": "/pages/maniobras/adquirir-maniobras"
+      },
+      "2": {
+        "title": "Filo largo",
+        "url": "/pages/maniobras/filo-largo"
+      },
+      "3": {
+        "title": "Filo corto",
+        "url": "/pages/maniobras/filo-corto"
+      }
+    }
+  },
+  "8": {
+    "title": "Magia",
+    "url": "/pages/magia"
+  },
+  "9": {
+    "title": "Equipo",
+    "url": "/pages/equipo"
+  },
+  "10": {
+    "title": "Críticos y pifias",
+    "url": "/pages/criticos-y-pifias"
+  }
+}
