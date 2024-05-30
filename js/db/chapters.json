@@ -11,16 +11,16 @@
     "url": "/pages/tiro-base"
   },
   "3": {
+    "title": "Turnos y acciones",
+    "url": "/pages/turnos-y-acciones"
+  },
+  "4": {
     "title": "Salud y cordura",
     "url": "/pages/salud-y-cordura"
   },
-  "4": {
+  "5": {
     "title": "Atributos",
     "url": "/pages/atributos"
-  },
-  "5": {
-    "title": "Turnos y acciones",
-    "url": "/pages/turnos-y-acciones"
   },
   "6": {
     "title": "Habilidades",
