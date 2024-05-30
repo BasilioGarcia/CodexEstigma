@@ -167,3 +167,5 @@ Lo que siempre quiso el W3C.
 
 ## <span style="color:var(--title)">Auto-creación de anchors internos</span>
 ## <span style="color:var(--title)">Tooltips</span>
+
+$${\color{red}Texto de prueba}$$
