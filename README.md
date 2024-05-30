@@ -9,7 +9,9 @@
     }
 </style>
 # CodexEstigma
- Manual del juego de rol Codex Estigma, por [BasilioGarcia](https://x.com/_BasilioGarcia_).
+Manual del juego de rol Codex Estigma, por [BasilioGarcia](https://x.com/_BasilioGarcia_).
+
+El manual puede ser consultado online [AQUÍ](https://basiliogarcia.github.io/CodexEstigma/).
 
 # <span style="color:var(--title)">Características</span>
 
@@ -28,6 +30,7 @@ Este manual usa un sistema de plantillas propio. En vez de tener que repetir tod
 usa un código HTML mínimo para crear los artículos y el motor en JavaScript de la plantilla se encarga de crear el
 resto del documento. El menú y el paginado se crean de forma automática configurando un archivo.
 
+> [!NOTE]
 > Creé este sistema, porque a medida que el manual iba teniéndo más páginas se volvía un engorro tanto el modificar código
 que afectaba a muchas páginas, como el reestructurar el orden de las páginas (cuando tienes que cambiar la URL
 de un enlace en más de 100 páginas HTML, echas de menos los sistemas de plantillas propios de los backends).
@@ -41,7 +44,7 @@ Si la página nueva, es una página individual, dentro de la carpeta creada debe
 - index.html - Contendrá el HTML de la página.
 - page.css - Contendrá el CSS específico de esa página. _(en muchas páginas está en blanco)_
 
-El archivo **_index.html_** tendrá el siguiente código:
+El archivo **_index.html_** tendrá el siguiente esquema:
 ```HTML
 <!DOCTYPE html>
 <meta charset="UTF-8" xmlns="http://www.w3.org/1999/html">
@@ -82,7 +85,7 @@ segundo enlace en el menú.
 
 La entrada tiene dos atributos: **_title_** y **_url_**.
 - **_title_** : Es el título de la página, se usa tanto en el menú, como en el encabezado de la página, como en la
-etiqueta **_&lt;title&gt;&lt;/title&gt;_**
+etiqueta **_&lt;title&gt;_**
 - **_url_** : Es la URL de donde va a cargar los archivos. Se compone de la concatenación de **_/pages/_** más el nombre de
 la nueva carpeta que se ha creado.
 
@@ -93,7 +96,7 @@ sub-carpeta por cada sub-página. Y dentro de cada sub-carpeta, deben de añadir
 - index.html - Contendrá el HTML de la página.
 - page.css - Contendrá el CSS específico de esa página. _(en muchas páginas está en blanco)_
 
-El archivo **_index.html_** tendrá el siguiente código:
+El archivo **_index.html_** tendrá el siguiente esquema:
 ```HTML
 <!DOCTYPE html>
 <meta charset="UTF-8" xmlns="http://www.w3.org/1999/html">
@@ -109,7 +112,7 @@ El código HTML de la página va dentro de la etiqueta **_page_**. Esta etiqueta
   con sub-páginas su valor es: _"../../.."_
 - **_data-chapterIndex_** : Es un ID que indica con que entrada del archivo **_chapters.json_** _(ver más adelante)_ se
 corresponde ésta página.
-- **_data-sectionIndex_** : Es un ID que indica con que sección de la entrada se corresponde ésta página.
+- **_data-sectionIndex_** : Es un ID que indica con que sección de la entrada se corresponde ésta página _(ver más adelante)_.
 
 A continuación hay que añadir la entrada de la página al archivo de configuración de capítulos: **_chapters.json_** en
 **_./js/db/chapters.json_**:
@@ -145,6 +148,7 @@ es una página con sub-páginas.
 
 <a name="uso-real-JQuery"></a>
 # <span style="color:var(--title)">Uso real de JQuery</span>
+>[!NOTE]
 > Aunque el proyecto usa la biblioteca JQuery, la mayoría del código es JavaScript vanilla, simplemente he usado JQuery 
 por la sintaxis de selectores del DOM abreviada y por el bindeo de eventos con propagación, que funcionan muy bien, 
 me parecen las funcionalidades mejor optimizadas de JQuery. No soy muy fan del resto de funcionalidades de JQuery y creo
@@ -152,6 +156,7 @@ que las soluciones en vainilla JS no sólo obtienen mejor performance, sino que 
 Por eso no he creado los componentes usando el sistema de componentes de JQuery, no me aportaban nada.
 
 # <span style="color:var(--title)">Por qué no BEM</span>
+> [!TIP]
 > BEM es, todavía, un estándar importante cuando se trata de coordinar proyectos grandes donde diferentes personas van
 a trabajar en los archivos CSS tanto ahora como en el futuro, pero, 
 
