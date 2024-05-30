@@ -1,19 +1,9 @@
-<style>
-    :root{
-        /* colores */
-        --background: #171717;
-        --title: #910707
-    }
-    html, body {
-        background-color: var(--background);
-    }
-</style>
 # CodexEstigma
 Manual del juego de rol Codex Estigma, por [BasilioGarcia](https://x.com/_BasilioGarcia_).
 
 El manual puede ser consultado online [AQUÍ](https://basiliogarcia.github.io/CodexEstigma/).
 
-# <span style="color:#910707">Características</span>
+# Características
 
 - HTML5, CSS3, JavaScript y JQuery (ver sección: [Uso real de JQuery](#uso-real-de-jquery))
 - Diseño responsive con cinco breakpoints: <768px, 768px, 992px, 1200px y 1638px.
@@ -21,11 +11,11 @@ El manual puede ser consultado online [AQUÍ](https://basiliogarcia.github.io/Co
 - Animaciones con CSS.
 - Sistema de plantillas propio creado en JS (uso de Promesas y caché de archivos).
 
-# <span style="color:var(--title)">Requisitos</span>
+# Requisitos
 Debido a que este manual ejecuta funciones avanzadas de JavaScript, requiere ser interpretado en un servidor web HTTP,
 como Apache, IIS o Ngnix.
 
-# <span style="color:var(--title)">Sistema de Plantilla</span>
+# Sistema de Plantilla
 Este manual usa un sistema de plantillas propio. En vez de tener que repetir todas las etiquetas HTML en cada página,
 usa un código HTML mínimo para crear los artículos y el motor en JavaScript de la plantilla se encarga de crear el
 resto del documento. El menú y el paginado se crean de forma automática configurando un archivo.
@@ -35,11 +25,11 @@ resto del documento. El menú y el paginado se crean de forma automática config
 que afectaba a muchas páginas, como el reestructurar el orden de las páginas (cuando tienes que cambiar la URL
 de un enlace en más de 100 páginas HTML, echas de menos los sistemas de plantillas propios de los backends).
 
-## <span style="color:var(--title)">Estructura de las páginas</span>
+## Estructura de las páginas
 Existen dos tipos de páginas, las individuales y las que tienen sub-páginas.
 Para crear una nueva página, hay que crear una nueva carpeta en la carpeta "pages", situada en la raíz del proyecto.
 
-### <span style="color:var(--title)">Crear una página individual</span>
+### Crear una página individual
 Si la página nueva, es una página individual, dentro de la carpeta creada deben de añadirse dos documentos:
 - index.html - Contendrá el HTML de la página.
 - page.css - Contendrá el CSS específico de esa página. _(en muchas páginas está en blanco)_
@@ -89,7 +79,7 @@ etiqueta **_&lt;title&gt;_**
 - **_url_** : Es la URL de donde va a cargar los archivos. Se compone de la concatenación de **_/pages/_** más el nombre de
 la nueva carpeta que se ha creado.
 
-### <span style="color:var(--title)">Crear una página con sub-páginas</span>
+### Crear una página con sub-páginas
 Si la página nueva, es una página con sub-páginas, dentro de la carpeta creada deben de añadirse, a su vez, una 
 sub-carpeta por cada sub-página. Y dentro de cada sub-carpeta, deben de añadirse dos documentos:
 
@@ -147,7 +137,7 @@ es una página con sub-páginas.
 
 
 <a name="uso-real-JQuery"></a>
-# <span style="color:var(--title)">Uso real de JQuery</span>
+# Uso real de JQuery
 >[!NOTE]
 > Aunque el proyecto usa la biblioteca JQuery, la mayoría del código es JavaScript vanilla, simplemente he usado JQuery 
 por la sintaxis de selectores del DOM abreviada y por el bindeo de eventos con propagación, que funcionan muy bien, 
@@ -155,7 +145,7 @@ me parecen las funcionalidades mejor optimizadas de JQuery. No soy muy fan del r
 que las soluciones en vainilla JS no sólo obtienen mejor performance, sino que aportan una metodología más ordenada. 
 Por eso no he creado los componentes usando el sistema de componentes de JQuery, no me aportaban nada.
 
-# <span style="color:var(--title)">Por qué no BEM</span>
+# Por qué no BEM
 > [!TIP]
 > BEM es, todavía, un estándar importante cuando se trata de coordinar proyectos grandes donde diferentes personas van
 a trabajar en los archivos CSS tanto ahora como en el futuro, pero, 
@@ -163,7 +153,7 @@ a trabajar en los archivos CSS tanto ahora como en el futuro, pero,
 La malísima especifidad de antes era caótica y podía ser insufrible, pero la de ahora es controlable e incluso útil. 
 Lo que siempre quiso el W3C.
 
-# <span style="color:var(--title)">Componentes</span>
+# Componentes
 
-## <span style="color:var(--title)">Auto-creación de anchors internos</span>
-## <span style="color:var(--title)">Tooltips</span>
+## Auto-creación de anchors internos
+## Tooltips
