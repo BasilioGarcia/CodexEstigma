@@ -13,7 +13,7 @@ Manual del juego de rol Codex Estigma, por [BasilioGarcia](https://x.com/_Basili
 
 El manual puede ser consultado online [AQUÍ](https://basiliogarcia.github.io/CodexEstigma/).
 
-# <span style="color:var(--title)">Características</span>
+# <span style="color:#910707">Características</span>
 
 - HTML5, CSS3, JavaScript y JQuery (ver sección: [Uso real de JQuery](#uso-real-de-jquery))
 - Diseño responsive con cinco breakpoints: <768px, 768px, 992px, 1200px y 1638px.
@@ -167,5 +167,3 @@ Lo que siempre quiso el W3C.
 
 ## <span style="color:var(--title)">Auto-creación de anchors internos</span>
 ## <span style="color:var(--title)">Tooltips</span>
-
-$${\color{red}Texto de prueba}$$
