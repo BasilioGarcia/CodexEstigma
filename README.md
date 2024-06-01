@@ -1,15 +1,18 @@
 # CodexEstigma
 Manual del juego de rol Codex Estigma, por [BasilioGarcia](https://x.com/_BasilioGarcia_).
 
-El manual puede ser consultado online [AQUÍ](https://basiliogarcia.github.io/CodexEstigma/).
+El manual puede ser consultado online [AQUÍ](https://basiliogarcia.github.io/CodexEstigma/) ⤴.
 
 # Características
 
 - HTML5, CSS3, JavaScript y JQuery (ver sección: [Uso real de JQuery](#uso-real-de-jquery))
-- Diseño responsive con cinco breakpoints: <768px, 768px, 992px, 1200px y 1638px.
-- Nesting CSS nativo.
-- Animaciones con CSS.
 - Sistema de plantillas propio creado en JS (uso de Promesas y caché de archivos).
+- Diseño responsive con cinco breakpoints: <768px, 768px, 992px, 1200px y 1638px.
+- Nesting CSS nativo. (ver sección: [Por qué no BEM](#por-que-no-bem))
+- Animaciones con CSS.
+- Eliminado el scroll nativo del navegador, custom scroll en bloques de contenido, compatible con dispositivos móviles.
+- Subsecciones del menú visibles con efecto onHover que es compatible con dispositivos móviles.
+- [Auto-creación de anchors internos](#auto-creación-de-anchors-internos)
 
 # Requisitos
 Debido a que este manual ejecuta funciones avanzadas de JavaScript, requiere ser interpretado en un servidor web HTTP,
@@ -38,7 +41,7 @@ El archivo **_index.html_** tendrá el siguiente esquema:
 ```HTML
 <!DOCTYPE html>
 <meta charset="UTF-8" xmlns="http://www.w3.org/1999/html">
-<script src="../init.js"></script>
+<script src="../../js/init.js"></script>
 <page data-dir="../.." data-chapterIndex="3">
     HTML propio de ese artículo.
 </page>
@@ -90,7 +93,7 @@ El archivo **_index.html_** tendrá el siguiente esquema:
 ```HTML
 <!DOCTYPE html>
 <meta charset="UTF-8" xmlns="http://www.w3.org/1999/html">
-<script src="../init.js"></script>
+<script src="../../../js/init.js"></script>
 <page data-dir="../../.." data-chapterIndex="7" data-sectionIndex="1">
     HTML propio de ese artículo.
 </page>
@@ -132,11 +135,14 @@ A continuación hay que añadir la entrada de la página al archivo de configura
 ...
 ```
 En el código de ejemplo anterior, la entrada del archivo con el ID 6 es una página individual, y la entrada con el ID 7
-es una página con sub-páginas. 
+es una página con sub-páginas.
 
+Las entradas con sub-páginas tiene dos atributos: **_title_** y **_sections_**.
+- **_title_** : Es el título de la página, se usa en el menú.
+- **_sections_** : Son las entradas de las sub-páginas. Sus IDs son auto-incrementales y comienzan en 1. A su vez, 
+tienen dos atributos: **_title_** y **_url_**, funcionan como las páginas individuales.
 
-
-<a name="uso-real-JQuery"></a>
+<a name="uso-real-jquery"></a>
 # Uso real de JQuery
 >[!NOTE]
 > Aunque el proyecto usa la biblioteca JQuery, la mayoría del código es JavaScript vanilla, simplemente he usado JQuery 
@@ -145,15 +151,34 @@ me parecen las funcionalidades mejor optimizadas de JQuery. No soy muy fan del r
 que las soluciones en vainilla JS no sólo obtienen mejor performance, sino que aportan una metodología más ordenada. 
 Por eso no he creado los componentes usando el sistema de componentes de JQuery, no me aportaban nada.
 
+<a name="por-que-no-bem"></a>
 # Por qué no BEM
 > [!TIP]
-> BEM es, todavía, un estándar importante cuando se trata de coordinar proyectos grandes donde diferentes personas van
-a trabajar en los archivos CSS tanto ahora como en el futuro, pero, 
+> BEM sigue siendo un estándar importante para coordinar proyectos grandes donde múltiples personas trabajarán con los
+archivos CSS. Sin embargo, desde que CSS incorporó el nesting de forma nativa en 2021, se han facilitado métodos
+alternativos para mantener un código CSS limpio y organizado.
+> 
+>Además, creo que existe un mito exagerado, mal entendido, con la especificidad de los selectores CSS, y que la 
+propagación de BEM y las enseñanzas de ciertos "gurús" contribuyeron a ello.
+La especificidad es una característica [buscada por el W3C](https://www.w3.org/TR/selectors-4/#specificity-rules) y es
+MUY UTIL. Una cosa es tener un lío impresionante con la jerarquía de los selectores y otra es que no aproveches una
+característica perfectamente válida de las hojas de estilos.
+> 
+> Por todo ello, y porque es un proyecto personal, con el que no voy a entrar en conflicto con otros desarrolladores,
+he decidido usar, no solo native nesting, sino usar selectores con IDs y etiquetas genéricas como: **_&lt;aside&gt;_**,
+**_&lt;header&gt;_**...
+> 
+> Aún así, como se puede ver en la imagen inferior, el nivel de especificidad es bajo, se puede mantener un 
+equilibrio entre utilidad jerárquica y código limpio y ordenado.
 
-La malísima especifidad de antes era caótica y podía ser insufrible, pero la de ahora es controlable e incluso útil. 
-Lo que siempre quiso el W3C.
+![Gráfico de especificidad del archivo CSS](/img/000-specificity-graph.png)
+
 
 # Componentes
 
+<a name="autocreacion-de-anchors-internos"></a>
 ## Auto-creación de anchors internos
+Si a unas de las etiquetas usadas en los títulos (**_&lt;h2&gt;_**, **_&lt;h3&gt;_** o **_&lt;h4&gt;_**) se le 
+coloca un atributo ID, automáticamente se convierte en un enlace interno a ese título de la página.
+
 ## Tooltips
