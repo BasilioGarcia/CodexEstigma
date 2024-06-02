@@ -1,7 +1,7 @@
 export function loadTemplate() {
     return new Promise(async (resolve, reject) => {
         try {
-            const timestamp = (environment === 'production') ? new Date().getTime() : '';
+            const timestamp = (environment === 'development') ? new Date().getTime() : '';
             const page = $('page');
             const dir = page.attr('data-dir');
             const body = $('body');
@@ -34,7 +34,8 @@ export function loadTemplate() {
             $("#main").prepend(headerData);
             moveSection(dir, head, page);
 
-            resolve(metaData, sidebarData, mainData, chaptersData, headerData);
+            resolve( { "dir": dir, "chapters": chaptersData});
+
         } catch (error) {
             err('Error mientras se cargaba el template');
             reject(error);
@@ -48,8 +49,8 @@ function err(load) {
 }
 
 function setChapters(head, dir, page, chapters) {
-    let chapterIndex = parseInt(page.attr('data-chapterIndex'));
-    let sectionIndex = parseInt(page.attr('data-sectionIndex'));
+    let chapterIndex = parseInt(page.attr('data-chapter'));
+    let sectionIndex = parseInt(page.attr('data-section'));
 
     setTitles(head, dir, chapterIndex, sectionIndex, chapters);
     setMenu(dir, chapterIndex, sectionIndex, chapters);

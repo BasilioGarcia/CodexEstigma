@@ -42,17 +42,17 @@ El archivo **_index.html_** tendrá el siguiente esquema:
 <!DOCTYPE html>
 <meta charset="UTF-8" xmlns="http://www.w3.org/1999/html">
 <script src="../../js/init.js"></script>
-<page data-dir="../.." data-chapterIndex="3">
+<page data-dir="../.." data-chapter="3">
     HTML propio de ese artículo.
 </page>
     
 ```
 El código HTML de la página va dentro de la etiqueta **_page_**. Esta etiqueta tiene dos atributos: **_data-dir_** 
-y **_data-chapterIndex_**.
+y **_data-chapter_**.
 
 - **_data-dir_** : Indica la ruta a la raíz del proyecto, se usa para cargar correctamente los archivos. En las páginas
 individuales su valor es: _"../.."_
-- **_data-chapterIndex_** : Es un ID que indica con que entrada del archivo **_chapters.json_** _(ver más adelante)_ se
+- **_data-chapter_** : Es un ID que indica con que entrada del archivo **_chapters.json_** _(ver más adelante)_ se
 corresponde ésta página. 
 
 A continuación hay que añadir la entrada de la página al archivo de configuración de capítulos: **_chapters.json_** en
@@ -94,18 +94,18 @@ El archivo **_index.html_** tendrá el siguiente esquema:
 <!DOCTYPE html>
 <meta charset="UTF-8" xmlns="http://www.w3.org/1999/html">
 <script src="../../../js/init.js"></script>
-<page data-dir="../../.." data-chapterIndex="7" data-sectionIndex="1">
+<page data-dir="../../.." data-chapter="7" data-section="1">
     HTML propio de ese artículo.
 </page>
 ```
 El código HTML de la página va dentro de la etiqueta **_page_**. Esta etiqueta tiene tres atributos: **_data-dir_**, 
-**_data-chapterIndex_** y **_data-sectionIndex_**.
+**_data-chapter_** y **_data-section_**.
 
 - **_data-dir_** : Indica la ruta a la raíz del proyecto, se usa para cargar correctamente los archivos. En las páginas
   con sub-páginas su valor es: _"../../.."_
-- **_data-chapterIndex_** : Es un ID que indica con que entrada del archivo **_chapters.json_** _(ver más adelante)_ se
+- **_data-chapter_** : Es un ID que indica con que entrada del archivo **_chapters.json_** _(ver más adelante)_ se
 corresponde ésta página.
-- **_data-sectionIndex_** : Es un ID que indica con que sección de la entrada se corresponde ésta página _(ver más adelante)_.
+- **_data-section_** : Es un ID que indica con que sección de la entrada se corresponde ésta página _(ver más adelante)_.
 
 A continuación hay que añadir la entrada de la página al archivo de configuración de capítulos: **_chapters.json_** en
 **_./js/db/chapters.json_**:
@@ -178,7 +178,10 @@ equilibrio entre utilidad jerárquica y código limpio y ordenado.
 
 <a name="autocreacion-de-anchors-internos"></a>
 ## Auto-creación de anchors internos
-Si a unas de las etiquetas usadas en los títulos (**_&lt;h2&gt;_**, **_&lt;h3&gt;_** o **_&lt;h4&gt;_**) se le 
+**Nombre del componente: internal-anchors** 
+
+Si a unas de las etiquetas usadas en los títulos (**_&lt;h2&gt;_**, **_&lt;h3&gt;_** o **_&lt;h4&gt;_**) se le
 coloca un atributo ID, automáticamente se convierte en un enlace interno a ese título de la página.
 
 ## Tooltips
+**Nombre del componente: tooltips** 

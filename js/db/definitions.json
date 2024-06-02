@@ -3,9 +3,17 @@
     "title": "título entrada celda",
     "clave": "valor celda"
   },
+  "conjuro": {
+    "title": "título entrada conjuro",
+    "clave": "valor conjuro"
+  },
   "desventaja": {
     "title": "título entrada desventaja",
     "clave": "valor desventaja"
+  },
+  "maniobra": {
+    "title": "título entrada maniobra",
+    "clave": "valor maniobra"
   },
   "reaccion": {
     "title": "título entrada reacción",

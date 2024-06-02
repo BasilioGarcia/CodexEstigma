@@ -3,16 +3,18 @@ window.top.location !== window.location && (window.top.location = window.locatio
 
 import { bindHeader } from "./modules/header.js";
 import { bindSidebar } from "./modules/sidebar.js";
-import { internalAnchors } from "./modules/internalAnchors.js";
-import { tooltips } from "./modules/tooltips.js";
 import { loadTemplate } from "./modules/template.js";
+import { setInternalAnchors } from "./modules/internal-anchors.js";
+import { setLinks } from "./modules/pages-links.js";
+import { setTooltips } from "./modules/tooltips.js";
 
 $(document).ready(function() {
-    loadTemplate().then((resultados) => {
+    loadTemplate().then((data) => {
         bindHeader();
         bindSidebar();
-        internalAnchors();
-        tooltips();
+        setInternalAnchors();
+        setLinks(data["dir"], data["chapters"]);
+        setTooltips(data["dir"]);
     }).catch((error) => {
         console.error(error);
     });
