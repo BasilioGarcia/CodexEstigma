@@ -30,14 +30,8 @@ export function setLinks(dir, chapters) {
             const id = $(this).attr('data-id');
 
             if (!links[id]) {
-                //console.log('%c Error, no existe el page-link: ' + id, 'color: white; background-color: red; padding: 2px;');
-
-                console.log('%c                                                            ', 'background: black; padding: 5px 0; display: block;');
-                console.log('%c Error, no existe el page-link: ' + id, 'color: red; background: black; padding: 5px; display: block;');
-                console.log('%c                                                             ', 'background: black; padding: 5px 0; display: block;');
+                console.log('Error, no existe el page-link: ' + id);
                 return true;
-
-                //hacer componente externo que calcule en ancho de la pantalla para escribir los espacios en blanco
             }
 
             const chapter = links[id]['chapter'];
@@ -48,7 +42,7 @@ export function setLinks(dir, chapters) {
             $(this).after(a);
             $(this).remove();
         });
-    }
+    };
 
     loadLinks(path, callback);
 }

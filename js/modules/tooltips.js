@@ -13,14 +13,16 @@ function bindTooltip (me) {
 }
 
 export function setTooltips(dir) {
-    let timestamp = (environment === 'development') ? new Date().getTime() : '';
-    let url = dir + '/js/db/definitions.json?_=' + timestamp;
+    const timestamp = (environment === 'development') ? new Date().getTime() : '';
+    const url = dir + '/js/db/definitions.json?_=' + timestamp;
 
-    loadDefinitions(url, function (definitions) {
+    const callback = function (definitions) {
         $('t').each(function () {
             let id = $(this).attr('data-id');
             $(this).append('<span class="tooltip-window hide">'+ definitions[id]['title'] +'</span>');
             bindTooltip($(this));
         });
-    });
+    };
+
+    loadDefinitions(url, callback);
 }
