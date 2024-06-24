@@ -15,6 +15,10 @@
     "title": "título entrada maniobra",
     "clave": "valor maniobra"
   },
+  "puntos-esfuerzo": {
+    "title": "título entrada Puntos de Esfuerzo",
+    "clave": "valor <b>Puntos de Esfuerzo</b>"
+  },
   "reaccion": {
     "title": "título entrada reacción",
     "clave": "valor reacción"
