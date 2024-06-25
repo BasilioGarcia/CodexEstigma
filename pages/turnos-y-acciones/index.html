@@ -40,36 +40,36 @@
     <h3>Reacciones</h3>
     <p>
         La mayoría de las acciones son realizadas en la <b>Fase de acciones</b> <span class="parentheses">Se explica más adelante</span>, pero las acciones con el rasgo <b>Reacción</b> pueden usarse cuando la regla de esa acción en concreto
-        lo permita. Hacer una reacción cuesta <b>1 Segundo</b> y una cantidad de <b>Puntos de Esfuerzo</b> (<b>PE</b>) de acorde al tiempo que use aquello contra lo que se reacciona. Los costes se indican en la siguiente tabla.
+        lo permita. Hacer una reacción cuesta <b>1 Segundo</b> (<b>1S</b>) y una cantidad de <b>Puntos de Esfuerzo</b> (<b>PE</b>) de acorde al tiempo que use aquello contra lo que se reacciona. Los costes se indican en la siguiente tabla.
     </p>
     <div class="table-wrapper">
-        <table id="table-mastery-grades" class="table">
+        <table id="table-cost-pe-reactions" class="table">
             <thead>
             <tr>
                 <th>Tiempo</th>
-                <th>PE</th>
+                <th>Puntos de Esfuerzo</th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td>1 segundo</td>
-                <td>25 PE</td>
+                <td>25PE</td>
             </tr>
             <tr>
                 <td>2 segundos</td>
-                <td>20 PE</td>
+                <td>20PE</td>
             </tr>
             <tr>
                 <td>3 segundos</td>
-                <td>15 PE</td>
+                <td>15PE</td>
             </tr>
             <tr>
                 <td>4 segundos</td>
-                <td>10 PE</td>
+                <td>10PE</td>
             </tr>
             <tr>
                 <td>5+ segundos</td>
-                <td>5 PE</td>
+                <td>5PE</td>
             </tr>
             </tbody>
             <tfoot>
@@ -79,9 +79,116 @@
             </tfoot>
         </table>
         <q class="right">
-            Digamos que, cuanto más rápido es aquello a lo que se reacciona, más esfuerzo cuesta el llegar a reaccionar a tiempo.
+            Cuanto más rápida sea la situación a la que se necesita reaccionar, mayor será el esfuerzo requerido para responder a tiempo.
         </q>
     </div>
+    <h3>Acciones genéricas</h3>
+    <p>
+        En otras secciones del manual, se especifican los costes en Tiempo y Puntos de Esfuerzo para realizar acciones específicas, como combatir o usar habilidades,
+        que requieren reglas más detalladas. A continuación, se presentan unas listas de acciones cotidianas y sencillas junto con sus respectivos costes necesarios.
+     </p>
+    <h4>Acciones genéricas de movimiento</h4>
+    <div class="table-wrapper">
+        <table id="table-generic-actions"  class="table-cross">
+            <thead>
+            <tr>
+                <th></th><th>Tiempo</th><th>Puntos de Esfuerzo</th><th>Efecto</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Caminar</td>
+                <td>
+                    1S
+                </td>
+                <td>
+                    5PE
+                </td>
+                <td>
+                    Moverse 1'5 metros.
+                </td>
+            </tr>
+            <tr>
+                <td>Trotar</td>
+                <td>
+                    1S
+                </td>
+                <td>
+                    10PE
+                </td>
+                <td>
+                    Moverse 3 metros.
+                </td>
+            </tr>
+            <tr>
+                <td>Correr</td>
+                <td>1S</td>
+                <td>
+                    20PE
+                </td>
+                <td>
+                    Moverse 4'5 metros.
+                </td>
+            </tr>
+            <tr>
+                <td>Nadar</td>
+                <td>3</td>
+                <td>
+                    Atacar por la espalda<br>
+                    Trepar con ayuda de aliado
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Bucear</td>
+                <td>4</td>
+                <td>
+                    Ataque por sorpresa<br>
+                    Correr cuesta abajo
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Trepar</td>
+                <td>5</td>
+                <td>
+                    Enemigo incapacitado<br>
+                    Usar información clave
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Escalar</td>
+                <td>5</td>
+                <td>
+                    Enemigo incapacitado<br>
+                    Usar información clave
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="4"><span>Tabla 1.</span> Baremos grados de Ventaja y Desventaja.</td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p>
+        Las acciones de <b>Correr</b> y <b>Escalar</b> mencionadas en la tabla anterior son acciones genéricas, automáticas y no requieren ningún tipo de control.
+        Sin embargo, si un personaje desea superar estos efectos, o si el Director de Juego determina que en esa escena no se pueden usar las acciones genéricas y
+        se requiere conocimiento especializado, se pueden utilizar las acciones específicas de <b>Correr</b> y <b>Escalar</b>, detalladas en el capítulo de <page-link data-id="habilidades">Habilidades</page-link>.
+    </p>
+
+
     <h2>Turnos</h2>
     <p>
         Los turnos representan intervalos de cinco segundos, durante los cuales los personajes realizan sus acciones de manera secuenciada. Cada turno se divide en varias fases, que se ejecutan en el siguiente orden:
