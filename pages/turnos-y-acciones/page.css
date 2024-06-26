@@ -4,7 +4,8 @@
     }
 }
 
-#table-generic-actions {
+#table-generic-actions-movement,
+#table-generic-actions-objects{
     tbody tr td:nth-child(2),
     tbody tr td:nth-child(3){
         text-align: center;

@@ -40,69 +40,76 @@
     <h3>Reacciones</h3>
     <p>
         La mayoría de las acciones son realizadas en la <b>Fase de acciones</b> <span class="parentheses">Se explica más adelante</span>, pero las acciones con el rasgo <b>Reacción</b> pueden usarse cuando la regla de esa acción en concreto
-        lo permita. Hacer una reacción cuesta <b>1 Segundo</b> (<b>1S</b>) y una cantidad de <b>Puntos de Esfuerzo</b> (<b>PE</b>) de acorde al tiempo que use aquello contra lo que se reacciona. Los costes se indican en la siguiente tabla.
+        lo permita. Hacer una reacción cuesta <b>Tiempo 1</b> (<b>1T</b>) y una cantidad de <b>Esfuerzo</b> (<b>E</b>) de acorde al tiempo que use aquello contra lo que se reacciona. Los costes se indican en la siguiente tabla.
     </p>
     <div class="table-wrapper">
         <table id="table-cost-pe-reactions" class="table">
             <thead>
             <tr>
                 <th>Tiempo</th>
-                <th>Puntos de Esfuerzo</th>
+                <th>Esfuerzo</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>1 segundo</td>
-                <td>25PE</td>
+                <td>0T</td>
+                <td>5E</td>
             </tr>
             <tr>
-                <td>2 segundos</td>
-                <td>20PE</td>
+                <td>1T</td>
+                <td>4E</td>
             </tr>
             <tr>
-                <td>3 segundos</td>
-                <td>15PE</td>
+                <td>2T</td>
+                <td>3E</td>
             </tr>
             <tr>
-                <td>4 segundos</td>
-                <td>10PE</td>
+                <td>3T</td>
+                <td>2E</td>
             </tr>
             <tr>
-                <td>5+ segundos</td>
-                <td>5PE</td>
+                <td>4T</td>
+                <td>1E</td>
+            </tr>
+            <tr>
+                <td>5T o más</td>
+                <td>0E</td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-                <td colspan="2"><span>Tabla 3.</span> Coste de PE al reaccionar.</td>
+                <td colspan="2"><span>Tabla 3.</span> Coste de Esfuerzo al reaccionar.</td>
             </tr>
             </tfoot>
         </table>
         <q class="right">
             Cuanto más rápida sea la situación a la que se necesita reaccionar, mayor será el esfuerzo requerido para responder a tiempo.
         </q>
+        <q class="right">
+            Un truco para acordarse de los costes de ésta tabla es que la suma de las cifras, el Tiempo de aquello a lo que se reacciona y el Esfuerzo que necesitas gastar, siempre suman cinco.
+        </q>
     </div>
     <h3>Acciones genéricas</h3>
     <p>
-        En otras secciones del manual, se especifican los costes en Tiempo y Puntos de Esfuerzo para realizar acciones específicas, como combatir o usar habilidades,
+        En otras secciones del manual, se especifican los costes en Tiempo y Esfuerzo para realizar acciones específicas, como combatir o usar habilidades,
         que requieren reglas más detalladas. A continuación, se presentan unas listas de acciones cotidianas y sencillas junto con sus respectivos costes necesarios.
      </p>
     <h4>Acciones genéricas de movimiento</h4>
     <div class="table-wrapper">
-        <table id="table-generic-actions"  class="table-cross">
+        <table id="table-generic-actions-movement"  class="table-cross">
             <thead>
             <tr>
-                <th></th><th>Tiempo</th><th>Puntos de Esfuerzo</th><th>Efecto</th>
+                <th></th><th>Tiempo</th><th>Esfuerzo</th><th>Efecto</th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td>Caminar</td>
                 <td>
-                    1S
+                    1T
                 </td>
                 <td>
-                    5PE
+                    0E
                 </td>
                 <td>
                     Moverse 1'5 metros.
@@ -111,10 +118,10 @@
             <tr>
                 <td>Trotar</td>
                 <td>
-                    1S
+                    1T
                 </td>
                 <td>
-                    10PE
+                    1E
                 </td>
                 <td>
                     Moverse 3 metros.
@@ -122,73 +129,114 @@
             </tr>
             <tr>
                 <td>Correr</td>
-                <td>1S</td>
+                <td>1T</td>
                 <td>
-                    20PE
+                    2E
                 </td>
                 <td>
                     Moverse 4'5 metros.
                 </td>
             </tr>
             <tr>
-                <td>Nadar</td>
-                <td>3</td>
-                <td>
-                    Atacar por la espalda<br>
-                    Trepar con ayuda de aliado
-                </td>
-                <td>
-
-                </td>
-            </tr>
-            <tr>
-                <td>Bucear</td>
-                <td>4</td>
-                <td>
-                    Ataque por sorpresa<br>
-                    Correr cuesta abajo
-                </td>
-                <td>
-
-                </td>
-            </tr>
-            <tr>
-                <td>Trepar</td>
-                <td>5</td>
-                <td>
-                    Enemigo incapacitado<br>
-                    Usar información clave
-                </td>
-                <td>
-
-                </td>
-            </tr>
-            <tr>
                 <td>Escalar</td>
-                <td>5</td>
+                <td>2T</td>
                 <td>
-                    Enemigo incapacitado<br>
-                    Usar información clave
+                    2E
                 </td>
                 <td>
-
+                    Moverse 1'5 metros.
+                </td>
+            </tr>
+            <tr>
+                <td>Nadar</td>
+                <td>1T</td>
+                <td>
+                    1E
+                </td>
+                <td>
+                    Moverse 1'5 metros.
                 </td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-                <td colspan="4"><span>Tabla 1.</span> Baremos grados de Ventaja y Desventaja.</td>
+                <td colspan="4"><span>Tabla 4.</span> Costes acciones genéricas de movimiento.</td>
             </tr>
             </tfoot>
         </table>
     </div>
     <p>
-        Las acciones de <b>Correr</b> y <b>Escalar</b> mencionadas en la tabla anterior son acciones genéricas, automáticas y no requieren ningún tipo de control.
+        Las acciones de <b>Correr</b>, <b>Escalar</b> y <b>Nadar</b> mencionadas en la tabla anterior son acciones genéricas, automáticas y no requieren ningún tipo de control.
         Sin embargo, si un personaje desea superar estos efectos, o si el Director de Juego determina que en esa escena no se pueden usar las acciones genéricas y
-        se requiere conocimiento especializado, se pueden utilizar las acciones específicas de <b>Correr</b> y <b>Escalar</b>, detalladas en el capítulo de <page-link data-id="habilidades">Habilidades</page-link>.
+        se requiere conocimiento especializado, debe utilizarse las acciones específicas de <b>Correr</b>, <b>Escalar</b> y <b>Nadar</b>, detalladas en el capítulo de <page-link data-id="habilidades">Habilidades</page-link>.
     </p>
-
-
+    <h4>Acciones genéricas de interacción con objetos</h4>
+    <p>Para simplificar los numerosos casos genéricos que se pueden dar a la hora de que un personaje interactúe con un objeto, laborioso</p>
+    <div class="table-wrapper">
+        <table id="table-generic-actions-objects"  class="table-cross">
+            <thead>
+                <tr>
+                    <th></th><th>Tiempo</th><th>Esfuerzo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Abrir o cerrar una puerta</td>
+                    <td>1T</td>
+                    <td>
+                        0E
+                    </td>
+                </tr>
+                <tr>
+                    <td>Coger un objeto de la mochila</td>
+                    <td>3T</td>
+                    <td>
+                        1E
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dejar caer un objeto</td>
+                    <td>1T</td>
+                    <td>
+                        0E
+                    </td>
+                </tr>
+                <tr>
+                    <td>Desenvainar o envainar un arma</td>
+                    <td>
+                        1T
+                    </td>
+                    <td>
+                        0E
+                    </td>
+                </tr>
+                <tr>
+                    <td>Encender una antorcha</td>
+                    <td>
+                        2T
+                    </td>
+                    <td>
+                        2E
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sacar o guardar un arma</td>
+                    <td>2T</td>
+                    <td>
+                        1E
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="3"><span>Tabla 4.</span> Costes acciones genéricas de movimiento.</td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p>
+        La diferencia entre las acciones de <b>Desenvainar o envainar un arma</b> y <b>Sacar o guardar un arma</b> radica en si el arma dispone de una vaina que permita un enfundado y desenfundado rápido.
+    </p>
     <h2>Turnos</h2>
     <p>
         Los turnos representan intervalos de cinco segundos, durante los cuales los personajes realizan sus acciones de manera secuenciada. Cada turno se divide en varias fases, que se ejecutan en el siguiente orden:
@@ -219,6 +267,8 @@
 
 </page>
 <!--
+    Las acciones con tiempo cero, en que segundo se ejecutan?
+
     Tengo que ir haciendo esta sección en paralelo con la de Salud y Cordura.
     Tipos de acciones: reacción, declaración, prolongada
 
