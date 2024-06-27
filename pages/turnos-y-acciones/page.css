@@ -1,13 +1,43 @@
-#table-cost-pe-reactions {
-    tbody tr td:nth-child(2) {
-        text-align: center;
+#main #main-content #main-body{
+    #table-generic-actions tbody tr{
+        td:nth-child(2),
+        td:nth-child(3){
+            text-align: center;
+        }
+        td:nth-child(4){
+            font-size: 0.9em;
+        }
     }
+
+    #table-cost-pe-reactions{
+        tbody tr td {
+            text-align: center;
+        }
+        tbody tr td:nth-child(1) {
+            background-color: var(--sidebar-menu-bgcolor);
+            color: #dddde9;
+            font-family: 'Lora', serif;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+    }
+
+    #table-generic-actions-stamina{
+        tbody tr td:nth-child(2) {
+            text-align: center;
+        }
+    }
+
+    #table-generic-actions-movement,
+    #table-generic-actions-objects{
+        tbody tr td:nth-child(2),
+        tbody tr td:nth-child(3){
+            text-align: center;
+        }
+    }
+
 }
 
-#table-generic-actions-movement,
-#table-generic-actions-objects{
-    tbody tr td:nth-child(2),
-    tbody tr td:nth-child(3){
-        text-align: center;
-    }
-}
+
+
+
