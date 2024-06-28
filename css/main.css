@@ -481,6 +481,19 @@ aside{
                     &:hover{
                         color: var(--header-bordertop-color);
                     }
+
+                    &::after{
+                        content: '';
+                        display: inline-block;
+                        background: url('../img/001-external-link.svg') no-repeat center top;
+                        background-size: contain;
+                        width: 1em;
+                        height: 0.8em;
+                        margin-left: 0.2em;
+                        vertical-align: baseline;
+                        /*filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);*/
+                        filter: brightness(0) saturate(100%) invert(10%) sepia(80%) saturate(3695%) hue-rotate(353deg) brightness(109%) contrast(103%);
+                    }
                 }
 
                 table{
