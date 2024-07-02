@@ -129,16 +129,9 @@
         </table>
     </div>
     <p>
-        Si el Director de Juego no está seguro de que categoría es la Acción Genérica, por defecto se debe de considerar como Estándar.
+        Si el Director de Juego no está seguro de en que categoría encuadrar a una Acción Genérica, por defecto se debe de considerar como Estándar.
     </p>
     <h4>Acciones inmediatas y mantenidas</h4>
-    <p>
-        Todas las acciones son o inmediatas o mantenidas. Las acciones inmediatas deben de realizarse dentro de un único Turno. Si un personaje no dispone de Tiempo suficiente para pagar el coste de una Acción Inmediata, la acción es interrumpida.
-    </p>
-    <p>
-        Las acciones mantenidas son acciones que su ejecución se puede prolongar más de un Turno. No se ven interrumpidas al finalizar el turno. Si un personaje no dispone de Tiempo suficiente para pagar el coste de una Acción Mantenida,
-        puede pagar la cantidad de Tiempo que le reste en los turnos siguientes. En cambio, el coste de Esfuerzo de la acciones mantenidas debed de ser pagado íntegro cada Turno.
-    </p>
     <p>En el juego, todas las acciones se clasifican como inmediatas o mantenidas.</p>
     <ul>
         <li>
@@ -283,13 +276,42 @@
     </div>
     <h2>Turnos</h2>
     <p>
-        Los turnos representan intervalos de cinco segundos, durante los cuales los personajes realizan sus acciones de manera secuenciada. Cada turno se divide en varias fases, y se ejecutan en el siguiente orden: fase de inicio,
-        fase de iniciativa, fase de desafíos y fase de acciones.
+        Los turnos representan intervalos de cinco segundos. En ese tiempo, los personajes realizan sus acciones de manera secuenciada. Cada turno se divide en cuatro fases, y se ejecutan en el siguiente orden: Fase de Inicio,
+        Fase de Iniciativa, Fase de Desafíos y Fase de Acciones.
     </p>
-    <h4>Fase de inicio</h4>
-    <h4>Fase de iniciativa</h4>
-    <h4>Fase de desafíos</h4>
-    <h4>Fase de acciones</h4>
+    <h3>Fase de inicio</h3>
+    <p>
+        En esta fase los personajes reciben <b>Tiempo</b> y <b>Esfuerzo</b> para gastar en activar <b>Acciones</b> en el resto del Turno. Los personajes reciben 5T y 5E en caso de tener
+        su <b>Salud</b> y su <b>Cordura</b> en perfecto estado, en el capítulo <page-link data-id="salud-cordura">Salud y cordura</page-link> se detalla que cantidad obtienen de no ser así.
+    </p>
+    <p>
+        El Tiempo y Esfuerzo que reciben los personajes no se acumulan entre Turnos. Al terminar el Turno, se elimina todo el Tiempo y Esfuerzo que les haya sobrado a los personajes, y
+        en la Fase de Inicio del siguiente Turno volverán a recibir una nueva cantidad dependiendo de la Salud y Cordura que tengan en ese momento.
+    </p>
+    <h3>Fase de iniciativa</h3>
+    <p>
+        Cada personaje realiza un <t data-id="tiro-base">Tiro Base</t>, su resultado pasará a ser su Iniciativa para este Turno. La Iniciativa se usa para saber el orden en que se ejecutan las acciones en la Fase de Acciones.
+    </p>
+    <h3>Fase de desafíos</h3>
+    <p>
+        En esta fase, los personajes pueden enfrentar diversas situaciones que requieren una tirada de control para determinar sus efectos. Estas situaciones incluyen heridas, condiciones adversas y resultados de ciertas acciones.
+    </p>
+    <p><b>Procedimiento</b>:</p>
+    <ul>
+        <li>
+            1º <sb>Determinación de Pruebas</sb>: Identificar a los personajes que deben realizar tiradas de control. Esto puede deberse a efectos de combate, condiciones ambientales u otras circunstancias específicas del juego.
+        </li>
+        <li>
+            2º <sb>Orden de Iniciativa</sb>: Los personajes realizan sus tiradas de control siguiendo el orden de Iniciativa. Comienza con el personaje que tenga la mayor Iniciativa y procede en orden descendente.
+        </li>
+        <li>
+            3º <sb>Empates en Iniciativa</sb>: Si dos o más personajes tienen la misma Iniciativa, se considera que sus tiradas de control se realizan simultáneamente.
+        </li>
+        <li>
+            4º <sb>Tipo de Pruebas</sb>: El tipo de tirada de control varía según la condiciones específicas que afectan a cada personaje. Las reglas y detalles para cada tipo de prueba se explican en las secciones correspondientes a las diferentes condiciones y acciones del juego.
+        </li>
+    </ul>
+    <h3>Fase de acciones</h3>
     <ul>
         <li>
             Primer segundo.
@@ -304,16 +326,7 @@
             Cuarto segundo.
         </li>
     </ul>
-    <h3>Fase de inicio</h3>
-    <p>
-        En esta fase los personajes reciben <b>Tiempo</b> y <b>Esfuerzo</b> para gastar en activar <b>Acciones</b> en el resto del turno. Los personajes reciben 5T y 5E en caso de tener
-        su <b>Salud</b> y su <b>Cordura</b> en perfecto estado, en el capítulo <page-link data-id="salud-cordura">Salud y cordura</page-link> se detalla que cantidad obtienen de no ser así.
 
-
-        <!--
-        recargan sus puntos de acción y preparan sus habilidades para el turno.
-        -->
-    </p>
 
 </page>
 <!--
