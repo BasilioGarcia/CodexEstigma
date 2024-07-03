@@ -1,4 +1,8 @@
 {
+  "atributo-de-acierto": {
+    "title": "título entrada Atributo de Acierto",
+    "clave": "valor Atributo de Acierto"
+  },
   "celda": {
     "title": "título entrada celda",
     "clave": "valor celda"

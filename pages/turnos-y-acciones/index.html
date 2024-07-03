@@ -281,8 +281,8 @@
     </p>
     <h3>Fase de inicio</h3>
     <p>
-        En esta fase los personajes reciben <b>Tiempo</b> y <b>Esfuerzo</b> para gastar en activar <b>Acciones</b> en el resto del Turno. Los personajes reciben 5T y 5E en caso de tener
-        su <b>Salud</b> y su <b>Cordura</b> en perfecto estado, en el capítulo <page-link data-id="salud-cordura">Salud y cordura</page-link> se detalla que cantidad obtienen de no ser así.
+        En esta fase los personajes reciben <b>Tiempo</b> (T) y <b>Esfuerzo</b> (E) para gastar en activar <b>Acciones</b> en el resto del Turno. Los personajes reciben 5T y 5E en caso de tener
+        su <b>Salud</b> y su <b>Cordura</b> en perfecto estado, en el capítulo <page-link data-id="salud-cordura">Salud y cordura</page-link> se detalla que cantidad obtienen si las tienen mermadas.
     </p>
     <p>
         El Tiempo y Esfuerzo que reciben los personajes no se acumulan entre Turnos. Al terminar el Turno, se elimina todo el Tiempo y Esfuerzo que les haya sobrado a los personajes, y
@@ -312,21 +312,33 @@
         </li>
     </ul>
     <h3>Fase de acciones</h3>
+    <p>
+        <!--
+        Lo grueso del Turno se realiza en esta fase. Esta fase está compuesta por cinco sub-fases, cada una de ellas representa un segundo de los cinco que tiene el Turno y se juegan de forma secuencial. Son llamadas: primer segundo, segundo segundo, tercer segundo,
+        cuarto segundo y quinto segundo. En cada una de estas sub-fases los personajes pueden realizar acciones siguiendo siempre la misma estructura.-->
+
+        La Fase de Acciones es el núcleo del turno, dividida en cinco sub-fases que representan cada uno de los cinco segundos del turno. Cada sub-fase se juega de forma secuencial y se denomina: primer segundo, segundo segundo, tercer segundo,
+        cuarto segundo y quinto segundo. Durante cada sub-fase, los personajes pueden realizar acciones siguiendo la misma estructura.
+    </p>
+    <p><b>Procedimiento</b>:</p>
     <ul>
         <li>
-            Primer segundo.
+            1º <sb>Declaración de Acciones</sb>: Los personajes que no tienen el estado <b>Recuperándose</b> pueden declarar una acción a realizar.
         </li>
         <li>
-            Segundo segundo.
+            2º <sb>Orden de Iniciativa</sb>: Cada jugador que declaró una Acción suma el bono del <t data-id="atributo-de-acierto">Atributo de Acierto</t> relacionado con la Acción elegida a su Iniciativa.
+            Los personajes realizan sus acciones siguiendo el orden del resultado de esa suma. Comienza con el personaje que tenga la mayor cifra y procede en orden descendente.
         </li>
         <li>
-           Tercer segundo.
+            3º <sb>Empates en Iniciativa</sb>: Si dos o más personajes tienen la misma cifra, se considera que sus acciones se realizan simultáneamente.
         </li>
         <li>
-            Cuarto segundo.
+            4º <sb>Resolución de las acciones</sb>: Los personajes pagan el coste de las acciones, se restan el Tiempo y Esfuerzo que requiere la Acción y aplican sus reglas correspondientes.
+            Los personajes ganan el estado <b>Recuperándose</b> hasta que pase un número de sub-fases igual al coste de Tiempo de la acción, incluyendo la sub-fase Actual.
         </li>
     </ul>
-
+    <q>ejemplo</q>
+    <q>Jugabilidad VS Realismo</q>
 
 </page>
 <!--
