@@ -13,6 +13,7 @@ El manual puede ser consultado online [AQUÍ](https://basiliogarcia.github.io/Co
 - Eliminado el scroll nativo del navegador, custom scroll en bloques de contenido, compatible con dispositivos móviles.
 - Subsecciones del menú visibles con efecto onHover que es compatible con dispositivos móviles.
 - [Auto-creación de anchors internos](#auto-creación-de-anchors-internos)
+- [Enlaces referenciales](#enlaces-referenciales)
 
 # Requisitos
 Debido a que este manual ejecuta funciones avanzadas de JavaScript, requiere ser interpretado en un servidor web HTTP,
@@ -183,12 +184,13 @@ equilibrio entre utilidad jerárquica y código limpio y ordenado.
 Si a unas de las etiquetas usadas en los títulos (**_&lt;h2&gt;_**, **_&lt;h3&gt;_** o **_&lt;h4&gt;_**) se le
 coloca un atributo ID, automáticamente se convierte en un enlace interno a ese título de la página.
 
+<a name="enlaces-referenciales"></a>
 ## Enlaces referenciales
 **Nombre del componente: pages-links**
 
 En el archivo **_links.json_** se registran enlaces con un nombre de referencia, a modo de identificador. 
 En las páginas del manual que lo necesiten se agrega el enlace por el nombre de referencia, así, si luego el enlace
-cambia, no hay que cambiarlo en cada página que se uso, solo hay que cambiarlo en el archivo **_links.json_**.
+cambia, no hay que cambiarlo en cada página donde se usó, solo hay que cambiarlo en el archivo **_links.json_**.
 
 ## Tooltips
 **Nombre del componente: tooltips** 
