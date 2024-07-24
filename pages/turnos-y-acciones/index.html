@@ -233,6 +233,9 @@
     </p>
     <h4>Acciones de reacción</h4>
     <p>
+        Las acciones de Reacción son acciones que responden a otra acción, un evento o una situación.
+    </p>
+    <p>
         La mayoría de las acciones son realizadas en la <b>Fase de acciones</b> <span class="parentheses">Se explica más adelante</span>, pero las acciones con el rasgo <b>Reacción</b> pueden usarse cuando la regla de esa Acción en concreto
         lo permita. Hacer una Reacción cuesta <b>Tiempo 1</b> (<b>1T</b>) y una cantidad de <b>Esfuerzo</b> (<b>E</b>) de acorde al tiempo que use aquello contra lo que se reacciona. El coste de Esfuerzo requerido se indican en la siguiente tabla.
     </p>
@@ -326,18 +329,29 @@
     </ul>
     <h3>Fase de acciones</h3>
     <p>
-        La Fase de Acciones es el núcleo del turno, dividida en cinco sub-fases que representan cada uno de los cinco segundos del turno. Cada sub-fase se juega de forma secuencial y se denomina: primer segundo, segundo segundo, tercer segundo,
+        La Fase de Acciones es el núcleo del turno, donde los personajes realizan sus acciones de forma secuencial, basado en el orden de sus Iniciativas.
+
+
+
+        <!--
+        dividida en cinco sub-fases que representan cada uno de los cinco segundos del turno. Cada sub-fase se juega de forma secuencial y se denomina: primer segundo, segundo segundo, tercer segundo,
         cuarto segundo y quinto segundo. Durante cada sub-fase, los personajes pueden realizar acciones siguiendo la misma estructura.
+        -->
     </p>
     <p><b>Procedimiento</b>:</p>
     <ul>
         <li>
-            1º <sb>Declaración de Acciones</sb>: Los personajes que no tienen el estado <b>Recuperándose</b> pueden declarar una acción a realizar.
-        </li>
-        <li>
-            2º <sb>Orden de Iniciativa</sb>: Cada jugador que declaró una Acción suma el bono del <t data-id="atributo-de-acierto">Atributo de Acierto</t> relacionado con la Acción elegida a su Iniciativa.
+            1º <sb>Orden de Iniciativa</sb>: Se
+
+
+
+            Cada jugador que declaró una Acción suma el bono del <t data-id="atributo-de-acierto">Atributo de Acierto</t> relacionado con la Acción elegida a su Iniciativa.
             Los personajes realizan sus acciones siguiendo el orden del resultado de esa suma. Comienza con el personaje que tenga la mayor cifra y procede en orden descendente.
         </li>
+        <li>
+            1º <sb>Declaración de Acciones</sb>: Los personajes que no tienen el estado <b>Recuperándose</b> pueden declarar una acción a realizar.
+        </li>
+
         <li>
             3º <sb>Empates en Iniciativa</sb>: Si dos o más personajes tienen la misma cifra, se considera que sus acciones se realizan simultáneamente.
         </li>
