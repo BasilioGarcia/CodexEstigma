@@ -3,69 +3,117 @@
 <script src="../../js/init.js"></script>
 <page data-dir="../.." data-chapter="3">
     <p>
-        Cuando es necesario determinar el orden de los sucesos que están teniendo lugar en la narración, así como su resolución y su grado de éxito, entran en juego las reglas del Turno y las Acciones.
+        Cuando es necesario determinar el orden de los sucesos que están teniendo lugar en la narración, así como su
+        resolución y su grado de éxito, entran en juego las reglas del Turno y las Acciones.
     </p>
     <p>
         El Director de Juego se encargará de decir cuando la narración pasa a usar el modo de Turnos.
     </p>
     <h2>Acciones</h2>
     <p>
-        A efectos de juego, cualquier actividad individual o movimiento que un personaje puede realizar cuando se está usando la regla del Turno es considerado una Acción.
+        A efectos de juego, cualquier actividad individual o movimiento que un personaje puede realizar cuando se está
+        usando la regla del Turno es considerado una Acción.
     </p>
     <q>
-        Correr es una Acción, saltar, trepar, montar un caballo son acciones, incluso, abrir una puerta o encender una antorcha son aciones.
+        Correr es una Acción, saltar, trepar, montar un caballo son acciones, incluso, abrir una puerta o encender una
+        antorcha son aciones.
     </q>
     <p>
-        Todas las acciones tienen dos costes para poder realizarse: <strong>Tiempo</strong> y <strong>Esfuerzo</strong>. Algunas acciones pueden tener un coste cero en Tiempo y/o Esfuerzo, eso no significa que no tengan coste, sino que es cero.
+        Todas las acciones tienen dos costes para poder realizarse: <strong>Tiempo</strong> y <strong>Esfuerzo</strong>.
+        Algunas acciones pueden tener un coste cero en Tiempo y/o Esfuerzo, eso no significa que no tengan coste, sino
+        que es cero.
     </p>
     <p>
-        Si un jugador declara el uso de una Acción, y cuando le toca actuar, no puede pagar su coste, se considerará que la Acción ha sido interrumpida y no tendrá efecto.
+        Si un jugador declara el uso de una Acción, y cuando le toca actuar, no puede pagar su coste, se considerará que
+        la Acción ha sido interrumpida y no tendrá efecto.
     </p>
     <h3>Tiempo</h3>
     <p>
-        Indica el coste en segundos que tarda en realizarse una Acción. Cuanto más Tiempo, más lenta será la Acción. Nunca puede haber una Acción
-        que tenga Tiempo cero, exceptuando que el efecto de un Conjuro, Maniobra o Dote así lo determine.
+        Indica cuanto tiempo tarda en realizarse una acción. Cuanto más Tiempo, más lenta será la Acción.
+        Normalmente, ninguna Acción puede tener Tiempo cero, pero a veces, esto puede ser cambiado con el efecto
+        de un Conjuro, Maniobra o Dote.
     </p>
     <p>
-        Los <b>Turnos</b> duran <b>5 segundos</b> (<b>5T</b>). Algunas acciones pueden exceder el tiempo de un Turno, y pueden requerir el uso de varios turnos para
-        llevarse a cabo.
+        Uno de Tiempo (<b>1T</b>) equivale a medio segundo de juego. Los <b>Turnos</b> duran <b>5 segundos</b>, es
+        decir, 10 de Tiempo (<b>10T</b>). Algunas acciones pueden completarse usando varios turnos, mientras no se
+        realice otra acción en medio. Iniciar una nueva acción supone siempre interrumpir una acción anterior inacabada.
+        El Tiempo que se usa cada turno se va sumando hasta alcanzar el coste total.
     </p>
     <h3>Esfuerzo</h3>
     <p>
-        Indica la dedicación y el esfuerzo físico necesario para llevar a cabo una Acción. Cuanto más esfuerzo, la Acción será más pesada y costosa de realizar o requerirá mayor precisión y dedicación.
+        Indica la dedicación y el esfuerzo físico necesario para llevar a cabo una Acción. Cuanto más esfuerzo, la
+        Acción será más pesada y costosa de realizar o requerirá mayor precisión y dedicación.
     </p>
     <q>
-        Levantar un gran peso es una Acción que requerirá mucho esfuerzo, pero enhebrar una aguja en una zona donde hay muy poca visibilidad también requiere un esfuerzo considerable.
+        Levantar un gran peso es una Acción que requerirá mucho esfuerzo, pero enhebrar una aguja en una zona donde hay
+        muy poca visibilidad también requiere un esfuerzo considerable.
     </q>
     <p>
-        Algunas acciones requieren un Esfuerzo mayor del que dispone un personaje en un turno. A diferencia de cuando se necesita más Tiempo, en el caso de requerir más Esfuerzo, la Acción nunca continúa
-        en los siguientes turnos, simplemente no puede realizarse. Si el Director de Juego lo cree conveniente, puede permitir que otros personajes colaboren entre sí para llevar a cabo una Acción, en ese caso la Acción
-        podrá completarse si la suma de sus esfuerzos llega al esfuerzo requerido.
+        A diferencia del coste de Tiempo de una acción, si una acción dura más de un turno, el coste de Esfuerzo
+        debe de ser pagado íntegramente cada turno.
     </p>
-    <q>Como ejemplo, imaginemos cargar con un ariete contra una puerta. Usar un ariete requiere un gran Esfuerzo y, normalmente, no podría ser realizado por una sola persona, requiere la suma de esfuerzos de varias personas.</q>
+    <p>
+        Si el Director de Juego lo cree conveniente, puede permitir que un grupo de personajes colaboren entre sí para
+        llevar a cabo una Acción, en ese caso la Acción podrá realizarse si durante todo el Tiempo necesario, la suma de
+        sus Esfuerzos llega al valor requerido.
+    </p>
+    <q>
+        En medio de una batalla, un grupo de personajes desean derribar un portón de un castillo. Para ello, improvisan
+        un ariete con el tronco de un árbol derribado. El Director de Juego establece que la acción que desean hacer
+        cuesta 40 Tiempo y 20 Esfuerzo. Entre todos, son capaces de sumar 30T y 22E por turno. En el primer turno no
+        tienen ningún problema y descuentan 30T de la acción, con lo que solamente les quedaría por pagar 10T de coste.
+        Pero en el segundo turno, un arquero enemigo que actúa antes que ellos, lanza una mortífera flecha que derriba
+        a uno de ellos. Sin ese miembro del grupo no pueden pagar el coste en esfuerzo por turno, 22E, con lo que la
+        acción es cancelada. El Director de Juego describe narrativamente la escena: cuando su compañero cae abatido con
+        una flecha es su espalda, pierden el equilibrio por el enorme peso del árbol y no pueden evitar soltarlo.
+    </q>
+
+    <!--
+    Por el medio no se puede realizar otra acción.
+    Algunas acciones requieren un Esfuerzo mayor del que dispone un personaje en un turno. A diferencia de cuando se
+    necesita más Tiempo, en el caso de requerir más Esfuerzo, la Acción nunca continúa
+    en los siguientes turnos, simplemente no puede realizarse.
+    -->
+
+    <!--
+    <q>Como ejemplo, imaginemos cargar con un ariete contra una puerta. Usar un ariete requiere un gran Esfuerzo y,
+        normalmente, no podría ser realizado por una sola persona, requiere la suma de esfuerzos de varias personas.</q>
+        -->
     <h3>Tipos de acciones</h3>
     <p>
-        Existen seis tipos de acciones: Específica, Genérica, Inmediata, Mantenida, Movimiento y Reacción. Una Acción puede pertenecer a varios tipos.
+        Existen seis tipos de acciones: Específica, Genérica, Inmediata, Mantenida, Movimiento y Reacción. Una Acción
+        puede pertenecer a varios tipos. Contenida.
     </p>
     <h4>Acciones específicas</h4>
     <p>
-        Son acciones que tienen unas reglas propias y personalizadas, como las <page-link data-id="habilidades">Habilidades</page-link>, la <page-link data-id="magia">Magia</page-link> y las <page-link data-id="maniobras">Maniobras</page-link>,
+        Son acciones que tienen unas reglas propias y personalizadas, como las
+        <page-link data-id="habilidades">Habilidades</page-link>
+        , la
+        <page-link data-id="magia">Magia</page-link>
+        y las
+        <page-link data-id="maniobras">Maniobras</page-link>
+        ,
         sus costes y sus efectos vienen detallados en los correspondientes capítulos del manual.
     </p>
     <h4>Acciones genéricas</h4>
     <p>
-        Son acciones que no tienen unas reglas específicas y que un personaje puede crear de manera espontánea. El Director del Juego será el encargado de improvisar unas reglas para la acción descrita.
+        Son acciones que no tienen unas reglas específicas y que un personaje puede crear de manera espontánea. El
+        Director del Juego será el encargado de improvisar unas reglas para la acción descrita.
         Ejemplos: arrojar una silla por los aires, recoger un objeto, encender una antorcha, volcar una mesa...
     </p>
     <p>
-        Existen tres categorías de acciones genéricas, clasificadas según su complejidad: Rápida, Estándar y Lenta. Cada Acción Genérica se asigna a una de estas categorías. Si un jugador desea realizar una Acción Genérica,
+        Existen tres categorías de acciones genéricas, clasificadas según su complejidad: Rápida, Estándar y Lenta. Cada
+        Acción Genérica se asigna a una de estas categorías. Si un jugador desea realizar una Acción Genérica,
         el Director de Juego determinará su categoría basándose en la tabla que se muestra a continuación:
     </p>
     <div class="table-wrapper">
-        <table id="table-generic-actions"  class="table-cross">
+        <table id="table-generic-actions" class="table-cross">
             <thead>
             <tr>
-                <th></th><th>Tiempo</th><th>Esfuerzo</th><th>Ejemplos</th>
+                <th></th>
+                <th>Tiempo</th>
+                <th>Esfuerzo</th>
+                <th>Ejemplos</th>
             </tr>
             </thead>
             <tbody>
@@ -132,112 +180,136 @@
         </table>
     </div>
     <p>
-        Si el Director de Juego no está seguro de en que categoría encuadrar a una Acción Genérica, por defecto se debe de considerar como Estándar.
+        Si el Director de Juego no está seguro de en que categoría encuadrar a una Acción Genérica, por defecto se debe
+        de considerar como Estándar.
     </p>
     <p>
-        Si el Director de Juego considera que la Acción Genérica tardaría más de un turno en realizarse, se suma 5T a la Acción por cada Turno extra que se tarde.
+        Si el Director de Juego considera que la Acción Genérica tardaría más de un turno en realizarse, se suma 5T a la
+        Acción por cada Turno extra que se tarde.
     </p>
-    <q>Un jugador quiere que su personaje (aquí colocar un ejemplo de un uso de algo como una herramienta improvisada)</q>
+    <q>Un jugador quiere que su personaje (aquí colocar un ejemplo de un uso de algo como una herramienta
+        improvisada)</q>
     <h4>Acciones inmediatas y mantenidas</h4>
     <p>En el juego, todas las acciones se clasifican como inmediatas o mantenidas.</p>
     <ul>
         <li>
-            <b>Acciones Inmediatas</b>: Estas acciones deben completarse dentro de un único Turno. Si un personaje no dispone del Tiempo suficiente para completar una Acción Inmediata, la acción es interrumpida y no se lleva a cabo.</li>
+            <b>Acciones Inmediatas</b>: Estas acciones deben completarse dentro de un único Turno. Si un personaje no
+            dispone del Tiempo suficiente para completar una Acción Inmediata, la acción es interrumpida y no se lleva a
+            cabo.
+        </li>
         <li>
-            <b>Acciones Mantenidas</b>: Estas acciones pueden prolongarse más allá de un solo Turno. No se ven interrumpidas al finalizar el Turno. Si un personaje no tiene Tiempo suficiente para completar una Acción Mantenida en un Turno,
-            puede continuar pagando el Tiempo requerido en los turnos siguientes hasta completarla. Sin embargo, el Esfuerzo necesario para las acciones mantenidas debe pagarse íntegramente en cada Turno en el que la acción se esté realizando.
+            <b>Acciones Mantenidas</b>: Estas acciones pueden prolongarse más allá de un solo Turno. No se ven
+            interrumpidas al finalizar el Turno. Si un personaje no tiene Tiempo suficiente para completar una Acción
+            Mantenida en un Turno,
+            puede continuar pagando el Tiempo requerido en los turnos siguientes hasta completarla. Sin embargo, el
+            Esfuerzo necesario para las acciones mantenidas debe pagarse íntegramente en cada Turno en el que la acción
+            se esté realizando.
         </li>
     </ul>
     <h4>Acciones de movimiento</h4>
     <p>
-        Son las acciones que están relacionadas con el movimiento de los personajes, sus costes y efectos son mostrados en la siguiente tabla:
+        Son las acciones que están relacionadas con el movimiento de los personajes, sus costes y efectos son mostrados
+        en la siguiente tabla:
     </p>
     <div class="table-wrapper">
-        <table id="table-generic-actions-movement"  class="table-cross">
+        <table id="table-generic-actions-movement" class="table-cross">
             <thead>
-                <tr>
-                    <th></th><th>Tiempo</th><th>Esfuerzo</th><th>Efecto</th>
-                </tr>
+            <tr>
+                <th></th>
+                <th>Tiempo</th>
+                <th>Esfuerzo</th>
+                <th>Efecto</th>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Caminar</td>
-                    <td>
-                        1T
-                    </td>
-                    <td>
-                        0E
-                    </td>
-                    <td>
-                        Moverse 1'5 metros.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Trotar</td>
-                    <td>
-                        1T
-                    </td>
-                    <td>
-                        1E
-                    </td>
-                    <td>
-                        Moverse 3 metros.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Correr</td>
-                    <td>1T</td>
-                    <td>
-                        2E
-                    </td>
-                    <td>
-                        Moverse 4'5 metros.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Escalar</td>
-                    <td>2T</td>
-                    <td>
-                        2E
-                    </td>
-                    <td>
-                        Moverse 1'5 metros.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Nadar</td>
-                    <td>1T</td>
-                    <td>
-                        1E
-                    </td>
-                    <td>
-                        Moverse 1'5 metros.
-                    </td>
-                </tr>
+            <tr>
+                <td>Caminar</td>
+                <td>
+                    1T
+                </td>
+                <td>
+                    0E
+                </td>
+                <td>
+                    Moverse 1'5 metros.
+                </td>
+            </tr>
+            <tr>
+                <td>Trotar</td>
+                <td>
+                    1T
+                </td>
+                <td>
+                    1E
+                </td>
+                <td>
+                    Moverse 3 metros.
+                </td>
+            </tr>
+            <tr>
+                <td>Correr</td>
+                <td>1T</td>
+                <td>
+                    2E
+                </td>
+                <td>
+                    Moverse 4'5 metros.
+                </td>
+            </tr>
+            <tr>
+                <td>Escalar</td>
+                <td>2T</td>
+                <td>
+                    2E
+                </td>
+                <td>
+                    Moverse 1'5 metros.
+                </td>
+            </tr>
+            <tr>
+                <td>Nadar</td>
+                <td>1T</td>
+                <td>
+                    1E
+                </td>
+                <td>
+                    Moverse 1'5 metros.
+                </td>
+            </tr>
             </tbody>
             <tfoot>
-                <tr>
-                    <td colspan="4"><span>Tabla 4.</span> Costes de acciones genéricas de movimiento.</td>
-                </tr>
+            <tr>
+                <td colspan="4"><span>Tabla 4.</span> Costes de acciones genéricas de movimiento.</td>
+            </tr>
             </tfoot>
         </table>
     </div>
     <p>
-        Si el Director de Juego considera que un personaje se mueve por un terreno que es particularmente complicado, puede incrementar el coste de Esfuerzo de las acciones listadas en la tabla anterior. Un <b>Terreno Complicado</b> sube el coste de la Acción
+        Si el Director de Juego considera que un personaje se mueve por un terreno que es particularmente complicado,
+        puede incrementar el coste de Esfuerzo de las acciones listadas en la tabla anterior. Un <b>Terreno
+        Complicado</b> sube el coste de la Acción
         en +1E, y un <b>Terreno muy complicado</b> en +2E.
     </p>
     <p>
-        Las acciones de <b>Correr</b>, <b>Escalar</b> y <b>Nadar</b> mencionadas en la Tabla 4 son acciones genéricas, automáticas y no requieren ningún tipo de control.
-        Sin embargo, si un personaje desea superar estos efectos, o si el Director de Juego determina que en esa escena no se pueden usar las acciones genéricas y
-        se requiere conocimiento especializado, debe utilizarse las acciones específicas de <b>Correr</b>, <b>Escalar</b> y <b>Nadar</b>, detalladas en el capítulo de <page-link data-id="habilidades">Habilidades</page-link>.
+        Las acciones de <b>Correr</b>, <b>Escalar</b> y <b>Nadar</b> mencionadas en la Tabla 4 son acciones genéricas,
+        automáticas y no requieren ningún tipo de control.
+        Sin embargo, si un personaje desea superar estos efectos, o si el Director de Juego determina que en esa escena
+        no se pueden usar las acciones genéricas y
+        se requiere conocimiento especializado, debe utilizarse las acciones específicas de <b>Correr</b>,
+        <b>Escalar</b> y <b>Nadar</b>, detalladas en el capítulo de
+        <page-link data-id="habilidades">Habilidades</page-link>
+        .
     </p>
     <h4>Acciones de reacción</h4>
     <p>
         Las acciones de Reacción son acciones que responden a otra acción, un evento o una situación.
     </p>
     <p>
-        La mayoría de las acciones son realizadas en la <b>Fase de acciones</b> <span class="parentheses">Se explica más adelante</span>, pero las acciones con el rasgo <b>Reacción</b> pueden usarse cuando la regla de esa Acción en concreto
-        lo permita. Hacer una Reacción cuesta <b>Tiempo 1</b> (<b>1T</b>) y una cantidad de <b>Esfuerzo</b> (<b>E</b>) de acorde al tiempo que use aquello contra lo que se reacciona. El coste de Esfuerzo requerido se indican en la siguiente tabla.
+        La mayoría de las acciones son realizadas en la <b>Fase de acciones</b> <span class="parentheses">Se explica más adelante</span>,
+        pero las acciones con el rasgo <b>Reacción</b> pueden usarse cuando la regla de esa Acción en concreto
+        lo permita. Hacer una Reacción cuesta <b>Tiempo 1</b> (<b>1T</b>) y una cantidad de <b>Esfuerzo</b> (<b>E</b>)
+        de acorde al tiempo que use aquello contra lo que se reacciona. El coste de Esfuerzo requerido se indican en la
+        siguiente tabla.
     </p>
     <div class="table-wrapper">
         <table id="table-cost-pe-reactions" class="table">
@@ -280,105 +352,152 @@
             </tfoot>
         </table>
         <q class="right">
-            Cuanto más rápida sea la situación a la que se necesita reaccionar, mayor será el esfuerzo requerido para responder a tiempo.
+            Cuanto más rápida sea la situación a la que se necesita reaccionar, mayor será el esfuerzo requerido para
+            responder a tiempo.
         </q>
         <q class="right">
-            Un truco para acordarse de los costes de ésta tabla es que la suma de las cifras, el Tiempo de aquello a lo que se reacciona y el Esfuerzo que se necesita gastar, siempre suman cinco.
+            Un truco para acordarse de los costes de ésta tabla es que la suma de las cifras, el Tiempo de aquello a lo
+            que se reacciona y el Esfuerzo que se necesita gastar, siempre suman cinco.
         </q>
     </div>
     <h2>Turnos</h2>
     <p>
-        Los turnos representan intervalos de cinco segundos. En ese tiempo, los personajes realizan sus acciones de manera secuenciada. Cada turno se divide en cuatro fases, y se ejecutan en el siguiente orden: Fase de Inicio,
+        Los turnos representan intervalos de cinco segundos. En ese tiempo, los personajes realizan sus acciones de
+        manera secuenciada. Cada turno se divide en cuatro fases, y se ejecutan en el siguiente orden: Fase de Inicio,
         Fase de Iniciativa, Fase de Desafíos y Fase de Acciones.
     </p>
     <h3>Fase de inicio</h3>
     <p>
-        En esta fase los personajes reciben <b>Tiempo</b> (T) y <b>Esfuerzo</b> (E) para gastar en activar <b>Acciones</b> en el resto del Turno. Los personajes reciben 5T y 5E en caso de tener
-        su <b>Salud</b> y su <b>Cordura</b> en perfecto estado, en el capítulo <page-link data-id="salud-cordura">Salud y cordura</page-link> se detalla que cantidad obtienen si las tienen mermadas.
+        En esta fase los personajes reciben <b>Tiempo</b> (T) y <b>Esfuerzo</b> (E) para gastar en activar
+        <b>Acciones</b> en el resto del Turno. Los personajes reciben 10T y 10E en caso de tener
+        su <b>Salud</b> y su <b>Cordura</b> en perfecto estado, en el capítulo
+        <page-link data-id="salud-cordura">Salud y cordura</page-link>
+        se detalla que cantidad obtienen si las tienen mermadas.
     </p>
     <p>
-        El Tiempo y Esfuerzo que reciben los personajes no se acumulan entre Turnos. Al terminar el Turno, se elimina todo el Tiempo y Esfuerzo que les haya sobrado a los personajes, y
-        en la Fase de Inicio del siguiente Turno volverán a recibir una nueva cantidad dependiendo de la Salud y Cordura que tengan en ese momento.
+        El Tiempo y Esfuerzo que reciben los personajes no se acumulan entre Turnos. Al terminar el Turno, se elimina
+        todo el Tiempo y Esfuerzo que les haya sobrado a los personajes, y
+        en la Fase de Inicio del siguiente Turno volverán a recibir una nueva cantidad dependiendo de la Salud y Cordura
+        que tengan en ese momento.
     </p>
     <h3>Fase de iniciativa</h3>
     <p>
         La Iniciativa establece el orden en que los personajes ejecutan sus acciones durante la Fase de Acciones.
     </p>
     <p>
-        Durante la Fase de Iniciativa, cada personaje realiza un <t data-id="tiro-base">Tiro Base</t> y le resta un punto por cada <b>Umbral de Salud</b> o <b>Umbral de Cordura</b> perdido. El resultado de esta tirada determina la Iniciativa
-        del personaje para el turno actual. Para más detalles sobre los Umbrales de Salud y Cordura, consulta el capítulo <page-link data-id="salud-cordura">Salud y cordura</page-link>.
+        Durante la Fase de Iniciativa, cada personaje realiza un
+        <t data-id="tiro-base">Tiro Base</t>
+        y le resta un punto por cada <b>Umbral de Salud</b> o <b>Umbral de Cordura</b> perdido. El resultado de esta
+        tirada determina la Iniciativa
+        del personaje para el turno actual. Para más detalles sobre los Umbrales de Salud y Cordura, consulta el
+        capítulo
+        <page-link data-id="salud-cordura">Salud y cordura</page-link>
+        .
     </p>
     <p>
-        Esta fase no necesita repetirse en cada turno. Los personajes pueden mantener su Iniciativa para turnos posteriores. Si un personaje sufre cambios en su Umbral de Salud o Umbral de Cordura, debe ajustar su Iniciativa en consecuencia.
-        La Fase de Iniciativa solo debe repetirse si el Director de Juego determina que ha ocurrido una nueva situación que altera significativamente el curso del combate.
+        Esta fase no necesita repetirse en cada turno. Los personajes pueden mantener su Iniciativa para turnos
+        posteriores. Si un personaje sufre cambios en su Umbral de Salud o Umbral de Cordura, debe ajustar su Iniciativa
+        en consecuencia.
+        La Fase de Iniciativa solo debe repetirse si el Director de Juego determina que ha ocurrido una nueva situación
+        que altera significativamente el curso del combate.
     </p>
     <h3>Fase de desafíos</h3>
     <p>
-        En esta fase, los personajes pueden enfrentar diversas situaciones que requieren una tirada de control para determinar sus efectos. Estas situaciones incluyen heridas, condiciones adversas y resultados de ciertas acciones.
+        En esta fase, los personajes pueden enfrentar diversas situaciones que requieren una tirada de control para
+        determinar sus efectos. Estas situaciones incluyen heridas, condiciones adversas y resultados de ciertas
+        acciones.
     </p>
     <p><b>Procedimiento</b>:</p>
     <ul>
         <li>
-            1º <sb>Determinación de Pruebas</sb>: Identificar a los personajes que deben realizar tiradas de control. Esto puede deberse a efectos de combate, condiciones ambientales u otras circunstancias específicas del juego.
+            1º
+            <sb>Determinación de Pruebas</sb>
+            : Identificar a los personajes que deben realizar tiradas de control. Esto puede deberse a efectos de
+            combate, condiciones ambientales u otras circunstancias específicas del juego.
         </li>
         <li>
-            2º <sb>Orden de Iniciativa</sb>: Los personajes realizan sus tiradas de control siguiendo el orden de Iniciativa. Comienza con el personaje que tenga la mayor Iniciativa y procede en orden descendente.
+            2º
+            <sb>Orden de Iniciativa</sb>
+            : Los personajes realizan sus tiradas de control siguiendo el orden de Iniciativa. Comienza con el personaje
+            que tenga la mayor Iniciativa y procede en orden descendente.
         </li>
         <li>
-            3º <sb>Empates en Iniciativa</sb>: Si dos o más personajes tienen la misma Iniciativa, se considera que sus tiradas de control se realizan simultáneamente.
+            3º
+            <sb>Empates en Iniciativa</sb>
+            : Si dos o más personajes tienen la misma Iniciativa, se considera que sus tiradas de control se realizan
+            simultáneamente.
         </li>
         <li>
-            4º <sb>Tipo de Pruebas</sb>: El tipo de tirada de control varía según la condiciones específicas que afectan a cada personaje. Las reglas y detalles para cada tipo de prueba se explican en las secciones correspondientes a las diferentes condiciones y acciones del juego.
+            4º
+            <sb>Tipo de Pruebas</sb>
+            : El tipo de tirada de control varía según la condiciones específicas que afectan a cada personaje. Las
+            reglas y detalles para cada tipo de prueba se explican en las secciones correspondientes a las diferentes
+            condiciones y acciones del juego.
         </li>
     </ul>
     <h3>Fase de acciones</h3>
     <p>
-        La Fase de Acciones es el núcleo del turno, donde los personajes realizan sus acciones de forma secuencial, basado en el orden de sus Iniciativas.
+        La Fase de Acciones es el núcleo del turno, donde los personajes realizan sus acciones de forma secuencial,
+        basado en el orden de sus Iniciativas.
     </p>
     <p><b>Procedimiento</b>:</p>
     <ul>
         <li>
-            1º <sb>Declaración de la primera acción</sb>: Cada jugador indica la primera acción que va a realizar su personaje ese turno. Una vez declarada, esas acciones
+            1º
+            <sb>Declaración de la primera acción</sb>
+            : Cada jugador indica la primera acción que va a realizar su personaje ese turno. Una vez declarada, esas
+            acciones
         </li>
         <li>
-            2º <sb>Orden de Iniciativa</sb>: Se organiza el orden en que actuaran los personajes de acuerdo a su Iniciativa. Comienza con el personaje que tenga la mayor Iniciativa y procede en orden descendente.
+            2º
+            <sb>Orden de Iniciativa</sb>
+            : Se organiza el orden en que actuaran los personajes de acuerdo a su Iniciativa. Comienza con el personaje
+            que tenga la mayor Iniciativa y procede en orden descendente.
         </li>
         <li>
-            3º <sb>Declaración de Acciones</sb>: Los personajes que no tienen el estado <b>Recuperándose</b> pueden declarar una acción a realizar.
-        </li>
-
-
-        <li>
-            1º <sb>Orden de Iniciativa</sb>: Se organiza el orden en que actuaran los personajes de acuerdo a su Iniciativa. Comienza con el personaje que tenga la mayor Iniciativa y procede en orden descendente.
+            3º
+            <sb>Declaración de Acciones</sb>
+            : Los personajes que no tienen el estado <b>Recuperándose</b> pueden declarar una acción a realizar.
         </li>
         <li>
-            2º <sb>Empates en Iniciativa</sb>: Cuando dos o más personajes obtienen la misma cifra de Iniciativa, se puede resolver el empate utilizando el siguiente método:<br>
-            - Los personajes involucrados en el empate deben declarar la primera Acción que planean realizar en el turno.<br>
+            1º
+            <sb>Orden de Iniciativa</sb>
+            : Se organiza el orden en que actuaran los personajes de acuerdo a su Iniciativa. Comienza con el personaje
+            que tenga la mayor Iniciativa y procede en orden descendente.
+        </li>
+        <li>
+            2º
+            <sb>Empates en Iniciativa</sb>
+            : Cuando dos o más personajes obtienen la misma cifra de Iniciativa, se puede resolver el empate utilizando
+            el siguiente método:<br>
+            - Los personajes involucrados en el empate deben declarar la primera Acción que planean realizar en el
+            turno.<br>
             - A continuación, suman el Atributo de Acierto correspondiente a esa Acción a su cifra de Iniciativa.<br>
             - Actúan en orden de mayor a menor resultado combinado (Iniciativa + Atributo de Acierto).<br>
-            - Si persisten empates después de sumar el Atributo de Acierto, las acciones de los personajes que tengan el mismo valor se consideran simultáneas.<br>
+            - Si persisten empates después de sumar el Atributo de Acierto, las acciones de los personajes que tengan el
+            mismo valor se consideran simultáneas.<br>
         </li>
         <li>
-            3º <sb>Declaración de Acciones</sb>: Los personajes que no tienen el estado <b>Recuperándose</b> pueden declarar una acción a realizar.
-        </li>
-
-
-
-
-
-
-
-        <li>
-            3º <sb>Empates en Iniciativa</sb>: Si dos o más personajes tienen la misma cifra, se considera que sus acciones se realizan simultáneamente.
+            3º
+            <sb>Declaración de Acciones</sb>
+            : Los personajes que no tienen el estado <b>Recuperándose</b> pueden declarar una acción a realizar.
         </li>
         <li>
-            4º <sb>Resolución de las acciones</sb>: Los personajes pagan el coste de las acciones, se restan el Tiempo y Esfuerzo que requiere la Acción y aplican sus reglas correspondientes.
-            Los personajes ganan el estado <b>Recuperándose</b> hasta que pase un número de sub-fases igual al coste de Tiempo de la acción, incluyendo la sub-fase Actual.
+            3º
+            <sb>Empates en Iniciativa</sb>
+            : Si dos o más personajes tienen la misma cifra, se considera que sus acciones se realizan simultáneamente.
+        </li>
+        <li>
+            4º
+            <sb>Resolución de las acciones</sb>
+            : Los personajes pagan el coste de las acciones, se restan el Tiempo y Esfuerzo que requiere la Acción y
+            aplican sus reglas correspondientes.
+            Los personajes ganan el estado <b>Recuperándose</b> hasta que pase un número de sub-fases igual al coste de
+            Tiempo de la acción, incluyendo la sub-fase Actual.
         </li>
     </ul>
     <q>ejemplo</q>
     <q>Jugabilidad VS Realismo</q>
-
 </page>
 <!--
     Las acciones con tiempo cero, ¿en qué segundo se ejecutan?
