@@ -185,37 +185,36 @@
             turno en realizarse, el costo total de Tiempo es 10T por cada turno completo necesario para realizar la
             acción más el coste en tiempo del último turno. El coste del último turno siempre ha de ser el coste normal
             de una acción genérica rápida, estándar o lenta. Una acción modificada de este modo será considerada Lenta y
-            Mantenida <span class="parentheses">Las acciones mantenidas se explican en unos párrafos más abajo</span>.
-            <br><br><q>Un personaje quiere derribar un árbol con su hacha para bloquear el paso de un carromato por un
-            camino, el Director de Juego considera que es una acción genérica que toma 13 segundos, 26T. El personaje
-            emplea dos turnos enteros más una acción genérica estándar de un tercer turno para terminar su acción (10T +
-            10T + 6T).</q>
+            Mantenida <span class="parentheses">Las acciones mantenidas se explican unos párrafos más abajo</span>. <br><br><q>Un
+            personaje quiere derribar un árbol con su hacha para bloquear el paso de un carromato por un camino, el
+            Director de Juego considera que es una acción genérica que toma 26T. El personaje emplea dos turnos enteros
+            más una acción genérica estándar de un tercer turno para terminar su acción (10T + 10T + 6T).</q>
         </li>
         <li>
             <b>Modificación del esfuerzo</b>: Modificación del esfuerzo: El Director de Juego puede ajustar el coste de
             esfuerzo para una acción genérica si considera que esta es más exigente de lo habitual. Al hacerlo, debe
             tener en cuenta lo siguiente:<br> - De 6E a 9E: Representa una acción desafiante, y puede que imposible para
-            un personaje herido.<br> - 10E: Es el esfuerzo máximo que un personaje en perfecto estado de salud puede
-            realizar por sí solo.<br> - Más de 10E: Requiere la colaboración de varios personajes trabajando en conjunto
-            para completar la tarea. <br><br><q>Un personaje quiere levantar a un compañero que ha caído inconsciente a
-            sus pies, y colocarlo detrás de una columna que se encuentra al lado de ámbos. El Director de Juego concluye
-            que puede realizarse en el tiempo de una acción genérica estándar, pero que levantar el peso de su compañero
-            es un esfuerzo mayor del normal en este tipo de acciones, y modifica la acción a 6E. Con lo que el personaje
-            debera realizar una acción genérica estándar de coste 6T y 6E.</q>
+            un personaje que se encuentre herido.<br> - 10E: Es el esfuerzo máximo que un personaje en perfecto estado
+            de salud puede realizar por sí solo.<br> - Más de 10E: Requiere la colaboración de varios personajes
+            trabajando en conjunto para completar la tarea. <br><br><q>Un personaje quiere levantar a un compañero que
+            ha caído inconsciente a sus pies, y colocarlo detrás de una columna que se encuentra al lado de ámbos. El
+            Director de Juego concluye que puede realizarse en el tiempo de una acción genérica estándar, pero que
+            levantar el peso de su compañero es un esfuerzo mayor del normal en este tipo de acciones, y modifica la
+            acción a 6E. Con lo que el personaje debera realizar una acción genérica estándar de coste 6T y 6E.</q>
         </li>
     </ul>
     <h4>Acciones inmediatas y mantenidas</h4>
     <p>En el juego, todas las acciones se clasifican como inmediatas o mantenidas.</p>
     <ul>
         <li>
-            <b>Acciones Inmediatas</b>: Estas acciones deben completarse dentro de un único Turno. Si un personaje no
-            dispone del Tiempo suficiente para completar una Acción Inmediata, la acción es interrumpida y no se lleva a
-            cabo.
+            <b>Acciones Inmediatas</b>: Estas acciones deben completarse dentro de un único turno. Si un personaje no
+            dispone del Tiempo suficiente para completar una acción inmediata en un único turno, la acción es
+            interrumpida y no se lleva a cabo.
         </li>
         <li>
-            <b>Acciones Mantenidas</b>: Estas acciones pueden prolongarse más allá de un solo Turno. No se ven
-            interrumpidas al finalizar el Turno. Si un personaje no tiene Tiempo suficiente para completar una Acción
-            Mantenida en un Turno, puede continuar pagando el Tiempo requerido en los turnos siguientes hasta
+            <b>Acciones Mantenidas</b>: Estas acciones pueden prolongarse más allá de un solo turno. No se ven
+            interrumpidas al finalizar el turno. Si un personaje no tiene Tiempo suficiente para completar una acción
+            mantenida en un turno, puede continuar pagando el Tiempo requerido en los turnos siguientes hasta
             completarla. Sin embargo, el Esfuerzo necesario para las acciones mantenidas debe pagarse íntegramente en
             cada Turno en el que la acción se esté realizando.
         </li>
@@ -238,9 +237,21 @@
             </thead>
             <tbody>
             <tr>
-                <td>Caminar</td>
+                <td>Encararse</td>
                 <td>
                     1T
+                </td>
+                <td>
+                    0E
+                </td>
+                <td>
+                    Girar su cuerpo en una dirección.
+                </td>
+            </tr>
+            <tr>
+                <td>Caminar</td>
+                <td>
+                    2T
                 </td>
                 <td>
                     0E
@@ -252,7 +263,7 @@
             <tr>
                 <td>Trotar</td>
                 <td>
-                    1T
+                    2T
                 </td>
                 <td>
                     1E
@@ -263,7 +274,7 @@
             </tr>
             <tr>
                 <td>Correr</td>
-                <td>1T</td>
+                <td>2T</td>
                 <td>
                     2E
                 </td>
@@ -273,7 +284,7 @@
             </tr>
             <tr>
                 <td>Escalar</td>
-                <td>2T</td>
+                <td>3T</td>
                 <td>
                     2E
                 </td>
@@ -283,7 +294,7 @@
             </tr>
             <tr>
                 <td>Nadar</td>
-                <td>1T</td>
+                <td>2T</td>
                 <td>
                     1E
                 </td>
@@ -301,8 +312,8 @@
     </div>
     <p>
         Si el Director de Juego considera que un personaje se mueve por un terreno que es particularmente complicado,
-        puede incrementar el coste de Esfuerzo de las acciones listadas en la tabla anterior. Un <b>Terreno
-        Complicado</b> sube el coste de la Acción en +1E, y un <b>Terreno muy complicado</b> en +2E.
+        puede incrementar el coste de Tiempo de las acciones listadas en la tabla anterior. Un <b>Terreno Complicado</b>
+        sube el coste de la acción en +1T, y un <b>Terreno muy complicado</b> en +2T.
     </p>
     <p>
         Las acciones de <b>Correr</b>, <b>Escalar</b> y <b>Nadar</b> mencionadas en la Tabla 4 son acciones genéricas,
@@ -319,9 +330,9 @@
     </p>
     <p>
         La mayoría de las acciones son realizadas en la <b>Fase de acciones</b> <span class="parentheses">Se explica más adelante</span>,
-        pero las acciones con el rasgo <b>Reacción</b> pueden usarse cuando la regla de esa Acción en concreto lo
+        pero las acciones con el rasgo <b>Reacción</b> pueden usarse cuando la regla de esa acción en concreto lo
         permita. Hacer una Reacción cuesta <b>Tiempo 1</b> (<b>1T</b>) y una cantidad de <b>Esfuerzo</b> (<b>E</b>) de
-        acorde al tiempo que use aquello contra lo que se reacciona. El coste de Esfuerzo requerido se indican en la
+        acorde al Tiempo que use aquello contra lo que se reacciona. El coste de Esfuerzo requerido se indican en la
         siguiente tabla.
     </p>
     <div class="table-wrapper">
@@ -366,13 +377,13 @@
             </tfoot>
         </table>
         <q class="right"> Cuanto más rápida sea la situación a la que se necesita reaccionar, mayor será el esfuerzo
-            requerido para responder a tiempo. </q> <q class="right"> Un truco para acordarse de los costes de ésta
-        tabla es que la suma de las cifras, el Tiempo de aquello a lo que se reacciona y el Esfuerzo que se necesita
-        gastar, siempre suman cinco. </q>
+            requerido para responder a tiempo. </q> <q class="right">Un truco para acordarse de los costes de ésta tabla
+        es que la suma de las cifras, el Tiempo de aquello a lo que se reacciona y el Esfuerzo que se necesita gastar,
+        siempre suman cinco.</q>
     </div>
     <h2>Turnos</h2>
     <p>
-        Los turnos representan intervalos de cinco segundos. En ese tiempo, los personajes realizan sus acciones de
+        Los turnos representan intervalos de cinco segundos (10T). En ese tiempo, los personajes realizan sus acciones de
         manera secuenciada. Cada turno se divide en cuatro fases, y se ejecutan en el siguiente orden: Fase de Inicio,
         Fase de Iniciativa, Fase de Desafíos y Fase de Acciones.
     </p>
