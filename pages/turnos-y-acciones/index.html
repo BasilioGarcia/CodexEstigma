@@ -289,7 +289,7 @@
                     2E
                 </td>
                 <td>
-                    Moverse 1'5 metros.
+                    Escalar 1'5 metros.
                 </td>
             </tr>
             <tr>
@@ -299,7 +299,7 @@
                     1E
                 </td>
                 <td>
-                    Moverse 1'5 metros.
+                    Nadar 1'5 metros.
                 </td>
             </tr>
             </tbody>
@@ -383,9 +383,9 @@
     </div>
     <h2>Turnos</h2>
     <p>
-        Los turnos representan intervalos de cinco segundos (10T). En ese tiempo, los personajes realizan sus acciones de
-        manera secuenciada. Cada turno se divide en cuatro fases, y se ejecutan en el siguiente orden: Fase de Inicio,
-        Fase de Iniciativa, Fase de Desafíos y Fase de Acciones.
+        Los turnos representan intervalos de cinco segundos (10T). En ese tiempo, los personajes realizan sus acciones
+        de manera secuenciada. Cada turno se divide en cuatro fases, y se ejecutan en el siguiente orden: Fase de
+        Inicio, Fase de Iniciativa, Fase de Desafíos y Fase de Acciones.
     </p>
     <h3>Fase de inicio</h3>
     <p>
@@ -396,7 +396,7 @@
         se detalla que cantidad obtienen si las tienen mermadas.
     </p>
     <p>
-        El Tiempo y Esfuerzo que reciben los personajes no se acumulan entre Turnos. Al terminar el Turno, se elimina
+        El Tiempo y Esfuerzo que reciben los personajes no se acumula entre Turnos. Al terminar el Turno, se elimina
         todo el Tiempo y Esfuerzo que les haya sobrado a los personajes, y en la Fase de Inicio del siguiente Turno
         volverán a recibir una nueva cantidad dependiendo de la Salud y Cordura que tengan en ese momento.
     </p>
@@ -462,67 +462,26 @@
     <ul>
         <li>
             1º
-            <sb>Declaración de la primera acción</sb>
-            : Cada jugador indica la primera acción que va a realizar su personaje ese turno. Una vez declarada, esas
-            acciones
+            <sb>Declaración de la primera acción y modificación de la Iniciativa</sb>
+            : Cada jugador indica la primera acción que va a realizar su personaje este turno y modifica su Iniciativa
+            sumando el bono del Atributo de Acierto que está relacionado con esa acción. El Director de Juego hace lo
+            mismo con los PNJs.
         </li>
         <li>
             2º
             <sb>Orden de Iniciativa</sb>
             : Se organiza el orden en que actuaran los personajes de acuerdo a su Iniciativa. Comienza con el personaje
-            que tenga la mayor Iniciativa y procede en orden descendente.
+            que tenga la mayor Iniciativa y se procede en orden descendente. Las acciones de los personajes que tengan
+            el mismo valor se consideran simultáneas.
         </li>
         <li>
             3º
-            <sb>Declaración de Acciones</sb>
-            : Los personajes que no tienen el estado <b>Recuperándose</b> pueden declarar una acción a realizar.
-        </li>
-        <li>
-            1º
-            <sb>Orden de Iniciativa</sb>
-            : Se organiza el orden en que actuaran los personajes de acuerdo a su Iniciativa. Comienza con el personaje
-            que tenga la mayor Iniciativa y procede en orden descendente.
-        </li>
-        <li>
-            2º
-            <sb>Empates en Iniciativa</sb>
-            : Cuando dos o más personajes obtienen la misma cifra de Iniciativa, se puede resolver el empate utilizando
-            el siguiente método:<br> - Los personajes involucrados en el empate deben declarar la primera Acción que
-            planean realizar en el turno.<br> - A continuación, suman el Atributo de Acierto correspondiente a esa
-            Acción a su cifra de Iniciativa.<br> - Actúan en orden de mayor a menor resultado combinado (Iniciativa +
-            Atributo de Acierto).<br> - Si persisten empates después de sumar el Atributo de Acierto, las acciones de
-            los personajes que tengan el mismo valor se consideran simultáneas.<br>
-        </li>
-        <li>
-            3º
-            <sb>Declaración de Acciones</sb>
-            : Los personajes que no tienen el estado <b>Recuperándose</b> pueden declarar una acción a realizar.
-        </li>
-        <li>
-            3º
-            <sb>Empates en Iniciativa</sb>
-            : Si dos o más personajes tienen la misma cifra, se considera que sus acciones se realizan simultáneamente.
-        </li>
-        <li>
-            4º
             <sb>Resolución de las acciones</sb>
-            : Los personajes pagan el coste de las acciones, se restan el Tiempo y Esfuerzo que requiere la Acción y
-            aplican sus reglas correspondientes. Los personajes ganan el estado <b>Recuperándose</b> hasta que pase un
-            número de sub-fases igual al coste de Tiempo de la acción, incluyendo la sub-fase Actual.
+            : Cuando le toca actuar a un personaje, pude declarar
+
+            se restan el Tiempo y Esfuerzo que requiere la Acción y
+            aplican sus reglas correspondientes.
         </li>
     </ul>
     <q>ejemplo</q> <q>Jugabilidad VS Realismo</q>
 </page>
-<!--
-    Las acciones con tiempo cero, ¿en qué segundo se ejecutan?
-    Tengo que ir haciendo esta sección en paralelo con la de Salud y Cordura.
-
-    No se declaran que acción vas a hacer a inicio de turno, sino cuando te toca¿?
-
-    Comienza turno:
-     se declara el segundo 1
-     se declara el segundo 2
-     se declara el segundo 3
-     se declara el segundo 4
-     se declara el segundo 5
-    -->
