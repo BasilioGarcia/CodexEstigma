@@ -383,47 +383,48 @@
     </div>
     <h2>Turnos</h2>
     <p>
-        Los turnos representan intervalos de cinco segundos (10T). En ese tiempo, los personajes realizan sus acciones
-        de manera secuenciada. Cada turno se divide en cuatro fases, y se ejecutan en el siguiente orden: Fase de
-        Inicio, Fase de Iniciativa, Fase de Desafíos y Fase de Acciones.
+        Los turnos representan intervalos de tiempo en los que los personajes llevan a cabo sus acciones de manera
+        estructurada y secuencial. Cada turno abarca cinco segundos de tiempo dentro del juego, equivalentes a 10T.
+        Durante ese periodo, se desarrollan cuatro fases esenciales: Fase de Inicio, Fase de Iniciativa, Fase de
+        Desafíos, y Fase de Acciones.
     </p>
     <h3>Fase de inicio</h3>
     <p>
-        En esta fase los personajes reciben <b>Tiempo</b> (T) y <b>Esfuerzo</b> (E) para gastar en activar
-        <b>Acciones</b> en el resto del Turno. Los personajes reciben 10T y 10E en caso de tener su <b>Salud</b> y su
-        <b>Cordura</b> en perfecto estado, en el capítulo
-        <page-link data-id="salud-cordura">Salud y cordura</page-link>
-        se detalla que cantidad obtienen si las tienen mermadas.
+        En la Fase de Inicio, los personajes reciben los recursos clave que utilizarán a lo largo del turno: Tiempo (T)
+        y Esfuerzo (E). Estos recursos son necesarios para realizar acciones. Si un personaje se encuentra en óptimas
+        condiciones de Salud y Cordura, obtendrá 10T y 10E. Si su estado de Salud o Cordura está afectado, la cantidad
+        de recursos recibidos se ajustará, tal como se explica en el capítulo de
+        <page-link data-id="salud-cordura">Salud y Cordura</page-link>
+        .
     </p>
     <p>
-        El Tiempo y Esfuerzo que reciben los personajes no se acumula entre Turnos. Al terminar el Turno, se elimina
-        todo el Tiempo y Esfuerzo que les haya sobrado a los personajes, y en la Fase de Inicio del siguiente Turno
-        volverán a recibir una nueva cantidad dependiendo de la Salud y Cordura que tengan en ese momento.
+        Es importante recordar que tanto el Tiempo como el Esfuerzo no son acumulativos entre turnos. Al finalizar el
+        turno, cualquier cantidad no utilizada se pierde, y en el inicio del siguiente turno, se otorgarán nuevos
+        recursos según el estado actual del personaje.
     </p>
     <h3>Fase de iniciativa</h3>
     <p>
-        La Iniciativa establece el orden en que los personajes ejecutan sus acciones durante la Fase de Acciones.
+        La Iniciativa determina el orden en que los personajes ejecutan sus acciones en la Fase de Acciones.
     </p>
     <p>
-        Durante la Fase de Iniciativa, cada personaje realiza un
+        Durante esta fase, cada personaje realiza un
         <t data-id="tiro-base">Tiro Base</t>
-        y le resta un punto por cada <b>Umbral de Salud</b> o <b>Umbral de Cordura</b> perdido. El resultado de esta
-        tirada determina la Iniciativa del personaje para el turno actual. Para más detalles sobre los Umbrales de Salud
-        y Cordura, consulta el capítulo
+        . A este resultado se le resta un punto por cada <b>Umbral de Salud</b> o <b>Umbral de Cordura</b> perdido. El
+        resultado es la Iniciativa del personaje para el turno actual. Para más detalles sobre los Umbrales de Salud y
+        Cordura, consulta el capítulo
         <page-link data-id="salud-cordura">Salud y cordura</page-link>
         .
     </p>
     <p>
-        Esta fase no necesita repetirse en cada turno. Los personajes pueden mantener su Iniciativa para turnos
-        posteriores. Si un personaje sufre cambios en su Umbral de Salud o Umbral de Cordura, debe ajustar su Iniciativa
-        en consecuencia. La Fase de Iniciativa solo debe repetirse si el Director de Juego determina que ha ocurrido una
-        nueva situación que altera significativamente el curso del combate.
+        No es necesario repetir la Fase de Iniciativa en cada turno. Los personajes pueden mantener su Iniciativa para
+        turnos posteriores, a menos que el Director de Juego decida que ha ocurrido un evento significativo que altere
+        el flujo del combate. Si un personaje sufre cambios en su Umbral de Salud o Umbral deCordura durante el turno,
+        deberá ajustar su Iniciativa acorde a los nuevos valores.
     </p>
     <h3>Fase de desafíos</h3>
     <p>
         En esta fase, los personajes pueden enfrentar diversas situaciones que requieren una tirada de control para
-        determinar sus efectos. Estas situaciones incluyen heridas, condiciones adversas y resultados de ciertas
-        acciones.
+        determinar sus consecuencias. Esto incluye heridas, condiciones adversas y resultados de acciones previas.
     </p>
     <p><b>Procedimiento</b>:</p>
     <ul>
@@ -455,33 +456,33 @@
     </ul>
     <h3>Fase de acciones</h3>
     <p>
-        La Fase de Acciones es el núcleo del turno, donde los personajes realizan sus acciones de forma secuencial,
-        basado en el orden de sus Iniciativas.
+        La Fase de Acciones es el corazón del turno, donde los personajes realizan sus acciones de forma secuencial.
     </p>
     <p><b>Procedimiento</b>:</p>
     <ul>
         <li>
             1º
             <sb>Declaración de la primera acción y modificación de la Iniciativa</sb>
-            : Cada jugador indica la primera acción que va a realizar su personaje este turno y modifica su Iniciativa
-            sumando el bono del Atributo de Acierto que está relacionado con esa acción. El Director de Juego hace lo
-            mismo con los PNJs.
+            : Cada jugador debe declarar la primera acción que su personaje realizará, y sumar el bono del Atributo de
+            Acierto asociado a esa acción para ajustar su Iniciativa. El Director de Juego hace lo propio con los PNJs.
         </li>
         <li>
             2º
             <sb>Orden de Iniciativa</sb>
-            : Se organiza el orden en que actuaran los personajes de acuerdo a su Iniciativa. Comienza con el personaje
-            que tenga la mayor Iniciativa y se procede en orden descendente. Las acciones de los personajes que tengan
-            el mismo valor se consideran simultáneas.
+            : Los personajes actúan en orden descendente de acuerdo a su Iniciativa. Si dos o más personajes tienen la
+            misma Iniciativa, se considera que actúan simultáneamente.
         </li>
         <li>
             3º
-            <sb>Resolución de las acciones</sb>
-            : Cuando le toca actuar a un personaje, pude declarar
-
-            se restan el Tiempo y Esfuerzo que requiere la Acción y
-            aplican sus reglas correspondientes.
+            <sb>Resolución de las acciones (Asalto)</sb>
+            : Esta sub-fase recibe el nombre de Asalto. En su asalto, cuando le toca actuar a un personaje, puede
+            declarar acciones a realizar, de forma secuencial y mientras pueda pagar sus costes en Tiempo (T) y Esfuerzo
+            (E). Una vez que el personaje no pueda o no desee realizar más acciones, su asalto finaliza y se pasa al
+            siguiente personaje en orden de Iniciativa. El turno concluye cuando todos los personajes han completado sus
+            asaltos.
         </li>
     </ul>
+
+
     <q>ejemplo</q> <q>Jugabilidad VS Realismo</q>
 </page>
