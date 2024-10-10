@@ -11,6 +11,10 @@
     "title": "título entrada conjuro",
     "clave": "valor conjuro"
   },
+  "ejemplo": {
+    "title": "título entrada ejemplo",
+    "clave": "valor ejemplo"
+  },
   "desventaja": {
     "title": "título entrada desventaja",
     "clave": "valor desventaja"

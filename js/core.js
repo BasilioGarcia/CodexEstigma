@@ -8,6 +8,7 @@ import { setInternalAnchors } from "./modules/internal-anchors.js";
 import { setLinks } from "./modules/pages-links.js";
 import { setTooltips } from "./modules/tooltips.js";
 
+/*
 $(document).ready(function() {
     loadTemplate().then((data) => {
         bindHeader();
@@ -18,4 +19,20 @@ $(document).ready(function() {
     }).catch((error) => {
         console.error(error);
     });
+});*/
+
+document.addEventListener("readystatechange", function() {
+    if (document.readyState === "complete") {
+        loadTemplate()
+            .then((data) => {
+                bindHeader();
+                bindSidebar();
+                setInternalAnchors();
+                setLinks(data["dir"], data["chapters"]);
+                setTooltips(data["dir"]);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
 });

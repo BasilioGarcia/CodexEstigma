@@ -9,9 +9,10 @@
     <h3>Salud</h3>
     <p>
         La Salud representa la vitalidad y el bienestar físico de un personaje. Cuando un personaje sufre daño físico,
-        perderá puntos de Salud. A medida que su Salud disminuya, es cada vez más probable que obtenga
+        perderá puntos de Salud. El valor máximo de Salud es 100, indicando un estado óptimo, sin ningún daño. A medida
+        que su Salud disminuya, es cada vez más probable que obtenga
         <sb>heridas</sb>
-        físicas que le proporcionen efectos negativos adversos y que le dificulten realizar acciones.
+        físicas que le dificulten poder realizar acciones y que le proporcionen efectos negativos adversos.
     </p>
     <p>
         El estado de Salud de un personaje está vinculado con la mecánica de Esfuerzo, y determina que cantidad de
@@ -20,26 +21,106 @@
     <h3>Cordura</h3>
     <p>
         Representa la estabilidad mental y la fortaleza psicológica de un personaje. Cuando un personaje, al enfrentarse
-        a tensiones emocionales o terror psicológico, sufra daño mental, perderá puntos de Cordura. Al descender, es
-        cada vez más probable que el personaje pueda desarrollar
+        a tensiones emocionales o terror psicológico, sufra daño mental, perderá puntos de Cordura. El valor máximo de
+        Cordura es 100, indicando un estado óptimo, sin ningún daño. Al descender, es cada vez más probable que el
+        personaje pueda desarrollar
         <sb>trastornos</sb>
-        mentales, que le proporcionen efectos negativos adversos y que le dificulten realizar acciones.
+        mentales que le dificulten poder realizar acciones y que le proporcionen efectos negativos adversos.
     </p>
     <p>
         El estado de Cordura de un personaje está vinculado con la mecánica de Tiempo, y determina que cantidad de
-        Esfuerzo va a recibir en la Fase de inicio de los Turnos.
+        Tiempo va a recibir en la Fase de inicio de los Turnos.
     </p>
-    <h3>Esfuerzo</h3>
-    <h3>Tiempo</h3>
+    <h3>Umbrales de Salud y Cordura</h3>
+    <p>
+        Tanto la Salud como la Cordura de un personaje se divide en varios tamos que se llaman Umbrales. Estos tramos
+        representan el nivel de gravedad de los daños que puede tener un PJ. El primer tramo va desde los 100 hasta los
+        61 puntos de Salud, este tramo se llama Umbral 100 (u100). El siguiente tramo se llama Umbral 60 (u60) y va
+        desde los 60 puntos hasta los 41, y así sucesivamente como se indica en la siguiente tabla:
+    </p>
+    <div class="table-wrapper">
+        <table id="table-health-sanity"
+               class="table-cross">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Rango</th>
+                <th>Dados</th>
+                <th>Ejemplos</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Umbral 100</td>
+                <td>
+                    100 - 61
+                </td>
+                <td>
+                    1E
+                </td>
+                <td>
+                    a
+                </td>
+            </tr>
+            <tr>
+                <td>Umbral 60</td>
+                <td>
+                    60 - 41
+                </td>
+                <td>
+                    3E
+                </td>
+                <td>
+                    b
+                </td>
+            </tr>
+            <tr>
+                <td>Umbral 40</td>
+                <td>40 - 21</td>
+                <td>
+                    40
+                </td>
+                <td>
+                    c
+                </td>
+            </tr>
+            <tr>
+                <td>Umbral 20</td>
+                <td>20 - 11</td>
+                <td>
+                    40
+                </td>
+                <td>
+                    c
+                </td>
+            </tr>
+            <tr>
+                <td>Umbral 10</td>
+                <td>10 - 1</td>
+                <td>
+                    40
+                </td>
+                <td>
+                    c
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="4"><span>Tabla 3.</span> Costes de acciones genéricas y ejemplos.</td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
     <!--
 
-
+    Umbral de salud y de cordura: son tramos
 
     daño físco | daño mental
     puntos de heridas | puntos de trauma
-    heridas | traumas
-
-
+    heridas | trastornos
 
 
    -->
