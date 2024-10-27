@@ -115,30 +115,97 @@
             </tfoot>
         </table>
     </div>
-    <ul>
-        <li>
-            <b>Rango:</b> El rango de puntos de Salud o de Cordura que determinan, respectivamente, en que Umbral de
-            Salud o de Cordura se halla un personaje.
-        </li>
-        <li>
-            <b>Dados de Mella:</b> Son los dados que tendrá que tirar un jugador cuando el personaje sea dañado y haya
-            Riesgo de Mella <span class="parentheses">Se explica más adelante</span>.
-        </li>
-        <li>
-            <b>Esfuerzo / Tiempo:</b> Es la cantidad de puntos de Esfuerzo y de Tiempo que un personaje recibe en la
-            Fase de inicio.
-        </li>
-    </ul>
+
+    <p>
+        <sb>Rango:</sb>
+        El rango de puntos de Salud o de Cordura que determinan, respectivamente, en que Umbral de Salud o de Cordura se
+        halla un personaje.
+    </p>
+    <p>
+        <sb>Dados de Mella:</sb>
+        Son los dados que tendrá que tirar un jugador cuando el personaje sea dañado y haya Riesgo de Mella
+        <span class="parentheses">Se explica más adelante</span>.
+    </p>
+    <p>
+        <sb>Esfuerzo / Tiempo:</sb>
+        Es la cantidad de puntos de Esfuerzo y de Tiempo que un personaje recibe en la Fase de inicio.
+    </p>
     <q>Un personaje tiene 38 puntos de Salud y 54 de Cordura. Sus puntos de Salud indican que se halla en el Umbral 40
         de Salud, y que recibirá 8 de Esfuerzo en la Fase de inicio. Sus puntos de Cordura indica que se halla en el
         Umbral 60 de Cordura, y que recibirá 9 de Tiempo en la Fase de inicio.</q>
     <h3>Asignación de daño</h3>
     <p>
-        Un personaje puede recibir daño físico o daño mental por multiples razones: el golpe de un arma, traumas por
-        recordar los horrores de una guerra, una mala caída, el resultado de un conjuro peligroso,
+        Un personaje puede recibir daño, ya sea físico o mental, por multiples razones: ser golpeado con un arma,
+        revivir los traumas producidos por los horrores de la guerra, una mala caída, tener que afrontar una fobia, como
+        resultado de un conjuro peligroso, presenciar un suceso sobrenatural que su mente no puede afrontar...
+        Independientemente del motivo, cada vez que un personaje recibe daño, si el daño que recibe es físico, se resta
+        los puntos de daño a la Salud del personaje. Si el daño es mental, se restan los puntos de daño a la Cordura del
+        personaje. Después de eso, para ver si ha recibido un daño significativo, el personaje debe de hacer un control
+        de
+        <sb>Riesgo de Mella</sb>
+        .
     </p>
-
-
+    <h3>Riesgo de Mella</h3>
+    <div class="table-wrapper">
+        <table id="table-impact"
+               class="table-cross">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Nombre</th>
+                <th>Coste</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Nivel 1</td>
+                <td>Mella superficial</td>
+                <td>
+                    10 puntos de mella
+                </td>
+            </tr>
+            <tr>
+                <td>Nivel 2</td>
+                <td>Mella leve</td>
+                <td>
+                    20 puntos de mella
+                </td>
+            </tr>
+            <tr>
+                <td>Nivel 3</td>
+                <td>Mella importante</td>
+                <td>30 puntos de mella</td>
+            </tr>
+            <tr>
+                <td>Nivel 4</td>
+                <td>Mella grave</td>
+                <td>40 puntos de mella</td>
+            </tr>
+            <tr>
+                <td>Nivel 5</td>
+                <td>Mella excepcional</td>
+                <td>50 puntos de mella</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="3"><span>Tabla 7.</span> Niveles de Mella.</td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p>
+        El Riesgo de Mella indica la posibilidad de que un personaje obtenga secuelas por el daño sufrido. Para superar
+        el control, el personaje debe de tirar 1D100, y sacar un resultado igual o menos que su Salud o Cordura
+        (dependiendo del tipo de daño que haya recibido). Si falla el control, el personaje habrá sufrido una Mella.
+        Para ver el alcance de la Mella, el personaje deberá de lanzar los Dados de Mella que se indican en la Tabla 6,
+        según el Umbral en el que se encuentre. Se compara el resultado de la tirada, que se llama Puntos de Mella, con
+        la Tabla 7. El personaje está obligado a adquirir con sus Puntos de Mella una Mella del mayor nivel que pueda adquirir.
+    </p>
+    <h4>Calcular los Puntos de Mella</h4>
+    <p>
+        Cuando se lanzan los Dados de Mella,
+    </p>
     <!--
 
     Umbral de salud y de cordura: son tramos
